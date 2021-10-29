@@ -1,0 +1,100 @@
+--------- beginning of crash
+01-01 00:44:05.160   347   347 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 347 (keystore), pid 347 (keystore)
+01-01 00:44:05.161   349   349 F libc    : exec failed: No such file or directory
+01-01 00:44:05.162   347   347 F libc    : crash_dump helper failed to exec
+01-01 00:44:20.490   262   262 I recovery: type=1400 audit(0.0:528): avc: denied { getattr } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=11158 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+01-01 00:44:20.490   262   262 I recovery: type=1400 audit(0.0:529): avc: denied { read } for name="mmcblk1p1" dev="tmpfs" ino=11158 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+01-01 00:44:20.490   262   262 I recovery: type=1400 audit(0.0:530): avc: denied { open } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=11158 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+01-01 00:44:20.490   262   262 I recovery: type=1400 audit(0.0:531): avc: denied { ioctl } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=11158 ioctlcmd=0x1272 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+01-01 00:44:22.180   262   262 I recovery: type=1400 audit(0.0:532): avc: denied { read } for name="/" dev="mmcblk1p1" ino=1 scontext=u:r:recovery:s0 tcontext=u:object_r:vfat:s0 tclass=dir permissive=1
+01-01 00:44:22.180   262   262 I recovery: type=1400 audit(0.0:533): avc: denied { open } for path="/external_sd" dev="mmcblk1p1" ino=1 scontext=u:r:recovery:s0 tcontext=u:object_r:vfat:s0 tclass=dir permissive=1
+01-01 00:44:22.230   262   262 I recovery: type=1400 audit(0.0:534): avc: denied { getattr } for path="/external_sd/recovery.log" dev="mmcblk1p1" ino=65 scontext=u:r:recovery:s0 tcontext=u:object_r:vfat:s0 tclass=file permissive=1
+01-01 00:44:28.580   262   262 I recovery: type=1400 audit(0.0:535): avc: denied { read } for name="recovery.img" dev="mmcblk1p1" ino=90 scontext=u:r:recovery:s0 tcontext=u:object_r:vfat:s0 tclass=file permissive=1
+01-01 00:44:28.580   262   262 I recovery: type=1400 audit(0.0:536): avc: denied { open } for path="/external_sd/Alarms/crypto/recovery.img" dev="mmcblk1p1" ino=90 scontext=u:r:recovery:s0 tcontext=u:object_r:vfat:s0 tclass=file permissive=1
+01-01 00:44:30.230   262   262 I recovery: type=1400 audit(0.0:537): avc: denied { write } for name="/" dev="rootfs" ino=1 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+01-01 00:44:30.290   262   262 I recovery: type=1400 audit(0.0:538): avc: denied { remove_name } for name="system" dev="rootfs" ino=1729 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+01-01 00:44:30.290   262   262 I recovery: type=1400 audit(0.0:539): avc: denied { rmdir } for name="system" dev="rootfs" ino=1729 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+01-01 00:44:35.770   262   262 I recovery: type=1400 audit(0.0:540): avc: denied { write } for name="recovery.log" dev="mmcblk1p1" ino=65 scontext=u:r:recovery:s0 tcontext=u:object_r:vfat:s0 tclass=file permissive=1
+01-01 00:44:35.770   262   262 I recovery: type=1400 audit(0.0:541): avc: denied { setattr } for name="recovery.log" dev="mmcblk1p1" ino=65 scontext=u:r:recovery:s0 tcontext=u:object_r:vfat:s0 tclass=file permissive=1
+01-01 00:44:44.590   306   306 I recovery: type=1400 audit(0.0:542): avc: denied { ioctl } for path="/dev/mtp_usb" dev="tmpfs" ino=7679 ioctlcmd=0x4d03 scontext=u:r:recovery:s0 tcontext=u:object_r:mtp_device:s0 tclass=chr_file permissive=1
+01-01 00:44:50.160   315   315 I kworker/u8:5: type=1400 audit(0.0:543): avc: denied { use } for path="/external_sd/dmesg.log" dev="mmcblk1p1" ino=151 scontext=u:r:kernel:s0 tcontext=u:r:recovery:s0 tclass=fd permissive=1
+01-01 00:47:57.960   358   358 I hwservicemanage: type=1400 audit(0.0:544): avc: denied { read } for name="plat_hwservice_contexts" dev="rootfs" ino=7851 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservice_contexts_file:s0 tclass=file permissive=1
+01-01 00:47:57.960   358   358 I hwservicemanage: type=1400 audit(0.0:545): avc: denied { open } for path="/system/etc/selinux/plat_hwservice_contexts" dev="rootfs" ino=7851 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservice_contexts_file:s0 tclass=file permissive=1
+01-01 00:47:57.960   358   358 I hwservicemanage: type=1400 audit(0.0:546): avc: denied { getattr } for path="/system/etc/selinux/plat_hwservice_contexts" dev="rootfs" ino=7851 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservice_contexts_file:s0 tclass=file permissive=1
+01-01 00:47:57.970   358   358 I hwservicemanage: type=1400 audit(0.0:547): avc: denied { create } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+01-01 00:47:57.970   358   358 I hwservicemanage: type=1400 audit(0.0:548): avc: denied { bind } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+01-01 00:47:57.974   358   358 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+01-01 00:47:57.974   358   358 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+01-01 00:47:57.974   358   358 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+01-01 00:47:57.974   358   358 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+01-01 00:47:57.976   358   358 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=358 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:47:57.978   358   358 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=358 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:47:57.978   358   358 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=358 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:47:57.979   358   358 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+01-01 00:47:57.982   358   358 I hwservicemanager: hwservicemanager is ready now.
+01-01 00:47:57.983   358   358 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xaedf90c0)
+01-01 00:47:57.984   358   358 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 358 (hwservicemanage), pid 358 (hwservicemanage)
+01-01 00:47:57.985   360   360 F libc    : exec failed: No such file or directory
+01-01 00:47:57.985   358   358 F libc    : crash_dump helper failed to exec
+01-01 00:48:07.510   262   262 I recovery: type=1400 audit(0.0:555): avc: denied { read } for name="vendor" dev="tmpfs" ino=10886 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+01-01 00:48:12.489   366   366 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+01-01 00:48:12.489   366   366 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+01-01 00:48:12.489   366   366 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+01-01 00:48:12.489   366   366 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+01-01 00:48:12.499   366   366 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=366 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:48:12.501   366   366 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=366 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:48:12.501   366   366 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=366 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:48:12.502   366   366 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+01-01 00:48:12.505   366   366 I hwservicemanager: hwservicemanager is ready now.
+01-01 00:48:12.506   366   366 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xad95d0c0)
+01-01 00:48:12.506   366   366 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 366 (hwservicemanage), pid 366 (hwservicemanage)
+01-01 00:48:12.580   369   369 I crash_dump32: type=1400 audit(0.0:556): avc: denied { read } for name="libc.so" dev="rootfs" ino=1515 scontext=u:r:crash_dump:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+01-01 00:48:12.580   369   369 I crash_dump32: type=1400 audit(0.0:557): avc: denied { open } for path="/sbin/libc.so" dev="rootfs" ino=1515 scontext=u:r:crash_dump:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+01-01 00:48:12.580   369   369 I crash_dump32: type=1400 audit(0.0:558): avc: denied { getattr } for path="/sbin/libc.so" dev="rootfs" ino=1515 scontext=u:r:crash_dump:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+01-01 00:48:12.588   368   368 E cutils-trace: Error opening trace file: No such file or directory (2)
+01-01 00:48:12.591   369   369 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+01-01 00:48:12.592   369   369 E libc    : failed to connect to tombstoned: No such file or directory
+01-01 00:48:12.592   369   369 I crash_dump32: performing dump of process 366 (target tid = 366)
+01-01 00:48:12.593   369   369 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+01-01 00:48:12.594   369   369 F DEBUG   : Build fingerprint: 'Infinix/omni_Nova/Nova:16.1.0/PQ3B.190801.002/runner10271340:eng/test-keys'
+01-01 00:48:12.594   369   369 F DEBUG   : Revision: '0'
+01-01 00:48:12.594   369   369 F DEBUG   : ABI: 'arm'
+01-01 00:48:12.594   369   369 F DEBUG   : pid: 366, tid: 366, name: hwservicemanage  >>> hwservicemanager <<<
+01-01 00:48:12.594   369   369 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+01-01 00:48:12.594   369   369 F DEBUG   : Abort message: 'FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xad95d0c0)'
+01-01 00:48:12.594   369   369 F DEBUG   :     r0  00000000  r1  0000016e  r2  00000006  r3  ad8a3498
+01-01 00:48:12.594   369   369 F DEBUG   :     r4  0000016e  r5  0000016e  r6  bef2acac  r7  0000010c
+01-01 00:48:12.594   369   369 F DEBUG   :     r8  bef2ad18  r9  ad8b5450  r10 ada4d070  r11 0000000a
+01-01 00:48:12.594   369   369 F DEBUG   :     ip  ad23f0b0  sp  bef2ac98  lr  ad82ef9d  pc  ad826d2a
+01-01 00:48:12.610   369   369 I crash_dump32: type=1400 audit(0.0:559): avc: denied { read } for name="status" dev="selinuxfs" ino=19 scontext=u:r:crash_dump:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file permissive=1
+01-01 00:48:12.610   369   369 I crash_dump32: type=1400 audit(0.0:560): avc: denied { open } for path="/sys/fs/selinux/status" dev="selinuxfs" ino=19 scontext=u:r:crash_dump:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file permissive=1
+01-01 00:48:12.612   369   369 F DEBUG   : 
+01-01 00:48:12.612   369   369 F DEBUG   : backtrace:
+01-01 00:48:12.612   369   369 F DEBUG   :     #00 pc 0001cd2a  /sbin/libc.so (abort+62)
+01-01 00:48:12.612   369   369 F DEBUG   :     #01 pc 00064c6f  /sbin/libc.so (__fortify_fatal(char const*, ...)+34)
+01-01 00:48:12.613   369   369 F DEBUG   :     #02 pc 000643fd  /sbin/libc.so (HandleUsingDestroyedMutex(pthread_mutex_t*, char const*)+20)
+01-01 00:48:12.613   369   369 F DEBUG   :     #03 pc 000642d5  /sbin/libc.so (pthread_mutex_lock+136)
+01-01 00:48:12.613   369   369 F DEBUG   :     #04 pc 0007827f  /sbin/libc++.so (std::__1::mutex::lock()+2)
+01-01 00:48:12.613   369   369 F DEBUG   :     #05 pc 0002e373  /sbin/libhidltransport.so (android::hardware::ConcurrentMap<android::hidl::base::V1_0::IBase const*, android::wp<android::hardware::BHwBinder>>::eraseIfEqual(android::hidl::base::V1_0::IBase const* const&, android::wp<android::hardware::BHwBinder> const&)+10)
+01-01 00:48:12.613   369   369 F DEBUG   :     #06 pc 00039893  /sbin/libhidltransport.so (android::hidl::manager::V1_1::BnHwServiceManager::~BnHwServiceManager()+82)
+01-01 00:48:12.613   369   369 F DEBUG   :     #07 pc 000399b7  /sbin/libhidltransport.so (_ZTv0_n12_N7android4hidl7manager4V1_118BnHwServiceManagerD0Ev+18)
+01-01 00:48:12.613   369   369 F DEBUG   :     #08 pc 000098ef  /sbin/libutils.so (android::RefBase::decStrong(void const*) const+70)
+01-01 00:48:12.613   369   369 F DEBUG   :     #09 pc 00010499  /sbin/libhwbinder.so (android::hardware::IPCThreadState::~IPCThreadState()+20)
+01-01 00:48:12.613   369   369 F DEBUG   :     #10 pc 0000f1e7  /sbin/libhwbinder.so (android::hardware::IPCThreadState::shutdown()+58)
+01-01 00:48:12.613   369   369 F DEBUG   :     #11 pc 000160d3  /sbin/libhwbinder.so (android::hardware::LibHwbinderIPCtStatics::~LibHwbinderIPCtStatics()+4)
+01-01 00:48:12.613   369   369 F DEBUG   :     #12 pc 00065c51  /sbin/libc.so (__cxa_finalize+136)
+01-01 00:48:12.613   369   369 F DEBUG   :     #13 pc 0001827b  /sbin/libc.so (exit+10)
+01-01 00:48:12.613   369   369 F DEBUG   :     #14 pc 0008ba9b  /sbin/libc.so (__libc_init+50)
+01-01 00:48:12.613   369   369 F DEBUG   :     #15 pc 00005d03  /sbin/hwservicemanager (_start_main+38)
+01-01 00:48:12.613   369   369 F DEBUG   :     #16 pc 0001a14b  /sbin/linker (__dl__ZNSt3__112__hash_tableINS_17__hash_value_typeIjP6soinfoEENS_22__unordered_map_hasherIjS4_NS_4hashIjEELb1EEENS_21__unordered_map_equalIjS4_NS_8equal_toIjEELb1EEENS_9allocatorIS4_EEE14__erase_uniqueIjEEjRKT_+90)
+01-01 00:48:12.613   369   369 F DEBUG   :     #17 pc 00020f89  [stack:bef0a000]
+01-01 00:48:12.652   369   369 I crash_dump: socket name: android:aee_aed, sfd: -1
+01-01 00:48:12.653   369   369 E crash_dump: crash_dump_notify: Unable to open connection to debuggerd: Connection refused
+01-01 00:48:12.653   369   369 E crash_dump32: unable to connect to activity manager: No such file or directory
+01-01 00:48:35.390     1     1 I init    : type=1400 audit(0.0:561): avc: denied { write } for name="saving" dev="sysfs" ino=12640 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 00:48:35.390     1     1 I init    : type=1400 audit(0.0:562): avc: denied { open } for path="/sys/devices/platform/mt_usb/saving" dev="sysfs" ino=12640 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 00:48:36.115   380   382 I adbd    : initializing functionfs
+01-01 00:48:36.115   380   382 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+01-01 00:48:36.116   380   382 I adbd    : functionfs successfully initialized
+01-01 00:48:36.116   380   382 I adbd    : registering usb transport
+01-01 00:48:36.120   380   384 E cutils-trace: Error opening trace file: No such file or directory (2)
