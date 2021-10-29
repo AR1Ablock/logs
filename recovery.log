@@ -1,1346 +1,149 @@
-Starting TWRP 3.5.2_9-0-69e6e775 on Sun Oct 24 21:01:19 2021
- (pid 261)
-I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file' does not exist, USB storage mode disabled
-I:Find_File: Error opening '/sys/class/backlight'
-I:Found brightness file at '/sys/class/leds/lcd-backlight/brightness'
-I:Got max brightness 255 from '/sys/class/leds/lcd-backlight/max_brightness'
-I:TWFunc::Set_Brightness: Setting brightness control to 255
-I:LANG: en
-Starting the UI...
-setting DRM_FORMAT_RGB565 and GGL_PIXEL_FORMAT_RGB_565
-cannot find/open a drm device: No such file or directory
-fb0 reports (possibly inaccurate):
-  vi.bits_per_pixel = 32
-  vi.red.offset   =   0   .length =   8
-  vi.green.offset =   8   .length =   8
-  vi.blue.offset  =  16   .length =   8
-setting GGL_PIXEL_FORMAT_RGBA_8888
-double buffered
-framebuffer: 0 (720 x 1520)
-Using fbdev graphics.
-I:TWFunc::Set_Brightness: Setting brightness control to 255
-TW_SCREEN_BLANK_ON_BOOT := true
-I:TWFunc::Set_Brightness: Setting brightness control to 0
-I:TWFunc::Set_Brightness: Setting brightness control to 255
-I:Loading package: splash (/twres/splash.xml)
-I:Load XML directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
-I:Checking resolution...
-I:Scaling theme width 0.666667x and height 0.791667x, offsets x: 0 y: 0 w: 0 h: 0
-I:Loading resources...
-I:Loading variables...
-I:Loading mouse cursor...
-I:Loading pages...
-I:Loading page splash
-I:Switching packages (splash)
-I:minui: /sys/board_properties/virtualkeys.mtk-tpd is 2 % 6
-=> Linking mtab
-=> Processing /etc/recovery.fstab for SAR-detection
-I:Reading /etc/recovery.fstab
-I:Done processing fstab files
-I:SAR-DETECT: SAR System detected
-=> Processing /etc/recovery.fstab
-I:Reading /etc/recovery.fstab
-I:Processing '/system'
-I:Created '/system_root' folder.
-I:Processing '/system_image'
-I:Processing '/vendor'
-I:Processing '/vendor_image'
-I:Processing '/data'
-I:Processing '/cache'
-I:Processing '/tranfs'
-I:Created '/tranfs' folder.
-I:Processing '/protect_f'
-I:Created '/protect_f' folder.
-I:Processing '/protect_s'
-I:Created '/protect_s' folder.
-I:Processing '/nvdata'
-I:Created '/nvdata' folder.
-I:Processing '/nvcfg'
-I:Created '/nvcfg' folder.
-I:Processing '/persist'
-I:Created '/persist' folder.
-I:Processing '/external_sd'
-I:Created '/external_sd' folder.
-I:Processing '/usb-otg'
-I:Created '/usb-otg' folder.
-I:Processing '/persistent'
-I:Processing '/nvram'
-I:Processing '/proinfo'
-I:Processing '/bootloader'
-I:Processing '/bootloader2'
-I:Processing '/misc'
-I:Processing '/boot'
-I:Processing '/recovery'
-I:Processing '/logo'
-I:Processing '/expdb'
-I:Processing '/seccfg'
-I:Processing '/tee1'
-I:Processing '/tee2'
-I:Processing '/scp1'
-I:Processing '/scp2'
-I:Processing '/sspm_1'
-I:Processing '/sspm_2'
-I:Processing '/md1img'
-I:Processing '/md1dsp'
-I:Processing '/md1arm7'
-I:Processing '/md3img'
-I:Processing '/spmfw'
-I:Processing '/boot_para'
-I:Processing '/dtbo1'
-I:Processing '/dtbo2'
-I:Processing '/dtbo'
-I:Processing '/vbmeta'
-I:Processing '/tkv'
-I:Done processing fstab files
-I:Using automatic handling for /data/media emulated storage device.
-I:Setting up '/data' as data/media emulated storage.
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Backup folder set to '/data/media/TWRP/BACKUPS/H624X62701234567'
-I:Settings storage is '/data/media'
-Updating partition details...
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Unable to mount '/external_sd'
-I:Actual block device: '', current file system: 'vfat'
-I:Can't probe device /dev/block/mmcblk0rpmb
-I:Unable to mount '/usb-otg'
-I:Actual block device: '/dev/block/mmcblk0rpmb', current file system: 'vfat'
-...done
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-Unable to mount storage
-I:Unmounting main partitions...
-
-
-Partition Logs:
-/system_root | /dev/block/platform/bootdevice/by-name/system | Size: 2589MB Used: 1578MB Free: 1011MB Backup Size: 1578MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent Mount_Read_Only 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/system
-   Display_Name: System
-   Storage_Name: System
-   Backup_Path: /system_root
-   Backup_Name: system
-   Backup_Display_Name: System
-   Storage_Path: /system_root
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/system_image | /dev/block/platform/bootdevice/by-name/system | Size: 2696MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/system
-   Display_Name: System Image
-   Storage_Name: system_image
-   Backup_Path: /system_image
-   Backup_Name: system_image
-   Backup_Display_Name: System Image
-   Storage_Path: /system_image
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/vendor | /dev/block/platform/bootdevice/by-name/vendor | Size: 396MB Used: 263MB Free: 133MB Backup Size: 263MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent Mount_Read_Only 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/vendor
-   Display_Name: Vendor
-   Storage_Name: Vendor
-   Backup_Path: /vendor
-   Backup_Name: vendor
-   Backup_Display_Name: Vendor
-   Storage_Path: /vendor
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/vendor_image | /dev/block/platform/bootdevice/by-name/vendor | Size: 416MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/vendor
-   Display_Name: vendor_image
-   Storage_Name: vendor_image
-   Backup_Path: /vendor_image
-   Backup_Name: vendor_image
-   Backup_Display_Name: vendor_image
-   Storage_Path: /vendor_image
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/data | /dev/block/platform/bootdevice/by-name/userdata | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
-   Symlink_Path: /data/media
-   Symlink_Mount_Point: /sdcard
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/userdata
-   Crypto_Key_Location: /dev/block/platform/bootdevice/by-name/metadata
-   Display_Name: Data
-   Storage_Name: Internal Storage
-   Backup_Path: /data
-   Backup_Name: data
-   Backup_Display_Name: Data
-   Storage_Path: /data/media
-   Current_File_System: f2fs
-   Fstab_File_System: f2fs
-   Backup_Method: files
-   MTP_Storage_ID: 65539
-
-/cache | /dev/block/platform/bootdevice/by-name/cache | Size: 177MB Used: 0MB Free: 177MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/cache
-   Display_Name: Cache
-   Storage_Name: Cache
-   Backup_Path: /cache
-   Backup_Name: cache
-   Backup_Display_Name: Cache
-   Storage_Path: /cache
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/tranfs | /dev/block/platform/bootdevice/by-name/tranfs | Size: 274MB Used: 0MB Free: 274MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/tranfs
-   Display_Name: Tranfs
-   Storage_Name: Tranfs
-   Backup_Path: /tranfs
-   Backup_Name: tranfs
-   Backup_Display_Name: Tranfs
-   Storage_Path: /tranfs
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/protect_f | /dev/block/platform/bootdevice/by-name/protect1 | Size: 3MB Used: 0MB Free: 3MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/protect1
-   Display_Name: Protect_f
-   Storage_Name: Protect_f
-   Backup_Path: /protect_f
-   Backup_Name: protect_f
-   Backup_Display_Name: Protect_f
-   Storage_Path: /protect_f
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/protect_s | /dev/block/platform/bootdevice/by-name/protect2 | Size: 3MB Used: 0MB Free: 3MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/protect2
-   Display_Name: Protect_s
-   Storage_Name: Protect_s
-   Backup_Path: /protect_s
-   Backup_Name: protect_s
-   Backup_Display_Name: Protect_s
-   Storage_Path: /protect_s
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/nvdata | /dev/block/platform/bootdevice/by-name/nvdata | Size: 59MB Used: 1MB Free: 57MB Backup Size: 1MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/nvdata
-   Display_Name: Nvdata
-   Storage_Name: Nvdata
-   Backup_Path: /nvdata
-   Backup_Name: nvdata
-   Backup_Display_Name: Nvdata
-   Storage_Path: /nvdata
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/nvcfg | /dev/block/platform/bootdevice/by-name/nvcfg | Size: 26MB Used: 0MB Free: 26MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/nvcfg
-   Display_Name: Nvcfg
-   Storage_Name: Nvcfg
-   Backup_Path: /nvcfg
-   Backup_Name: nvcfg
-   Backup_Display_Name: Nvcfg
-   Storage_Path: /nvcfg
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/persist | /dev/block/platform/bootdevice/by-name/persist | Size: 42MB Used: 0MB Free: 42MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/persist
-   Display_Name: Persist
-   Storage_Name: Persist
-   Backup_Path: /persist
-   Backup_Name: persist
-   Backup_Display_Name: Persist
-   Storage_Path: /persist
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/external_sd |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
-   Primary_Block_Device: /dev/block/mmcblk1p1
-   Alternate_Block_Device: /dev/block/mmcblk1
-   Display_Name: MicroSD
-   Storage_Name: MicroSD
-   Backup_Path: /external_sd
-   Backup_Name: external_sd
-   Backup_Display_Name: MicroSD
-   Storage_Path: /external_sd
-   Current_File_System: vfat
-   Fstab_File_System: vfat
-   Backup_Method: files
-   Mount_Flags: 0, Mount_Options: utf8
-   MTP_Storage_ID: 65537
-
-/usb-otg | /dev/block/mmcblk0rpmb | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable IsPresent Is_Storage 
-   Primary_Block_Device: /dev/block/mmcblk0rpmb
-   Alternate_Block_Device: /mnt/media_rw/usbotg
-   Display_Name: USB-OTG
-   Storage_Name: USB-OTG
-   Backup_Path: /usb-otg
-   Backup_Name: usb-otg
-   Backup_Display_Name: USB-OTG
-   Storage_Path: /usb-otg
-   Current_File_System: vfat
-   Fstab_File_System: vfat
-   Backup_Method: files
-   Mount_Flags: 0, Mount_Options: utf8
-   MTP_Storage_ID: 65538
-
-/persistent | /dev/block/platform/bootdevice/by-name/frp | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/frp
-   Display_Name: Persistent
-   Storage_Name: Persistent
-   Backup_Path: /persistent
-   Backup_Name: persistent
-   Backup_Display_Name: Persistent
-   Storage_Path: /persistent
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/nvram | /dev/block/platform/bootdevice/by-name/nvram | Size: 64MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/nvram
-   Display_Name: Nvram
-   Storage_Name: Nvram
-   Backup_Path: /nvram
-   Backup_Name: nvram
-   Backup_Display_Name: Nvram
-   Storage_Path: /nvram
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/proinfo | /dev/block/platform/bootdevice/by-name/proinfo | Size: 3MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/proinfo
-   Display_Name: Proinfo
-   Storage_Name: Proinfo
-   Backup_Path: /proinfo
-   Backup_Name: proinfo
-   Backup_Display_Name: Proinfo
-   Storage_Path: /proinfo
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/bootloader | /dev/block/platform/bootdevice/by-name/lk | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/lk
-   Display_Name: Bootloader
-   Storage_Name: Bootloader
-   Backup_Path: /bootloader
-   Backup_Name: bootloader
-   Backup_Display_Name: Bootloader
-   Storage_Path: /bootloader
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/bootloader2 | /dev/block/platform/bootdevice/by-name/lk2 | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/lk2
-   Display_Name: Bootloader2
-   Storage_Name: Bootloader2
-   Backup_Path: /bootloader2
-   Backup_Name: bootloader2
-   Backup_Display_Name: Bootloader2
-   Storage_Path: /bootloader2
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/misc | /dev/block/platform/bootdevice/by-name/para | Size: 0MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/para
-   Display_Name: Misc
-   Storage_Name: Misc
-   Backup_Path: /misc
-   Backup_Name: misc
-   Backup_Display_Name: Misc
-   Storage_Path: /misc
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/boot | /dev/block/platform/bootdevice/by-name/boot | Size: 32MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/boot
-   Display_Name: Boot
-   Storage_Name: Boot
-   Backup_Path: /boot
-   Backup_Name: boot
-   Backup_Display_Name: Boot
-   Storage_Path: /boot
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/recovery | /dev/block/platform/bootdevice/by-name/recovery | Size: 32MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/recovery
-   Display_Name: Recovery
-   Storage_Name: Recovery
-   Backup_Path: /recovery
-   Backup_Name: recovery
-   Backup_Display_Name: Recovery
-   Storage_Path: /recovery
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/logo | /dev/block/platform/bootdevice/by-name/logo | Size: 8MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/logo
-   Display_Name: Logo
-   Storage_Name: Logo
-   Backup_Path: /logo
-   Backup_Name: logo
-   Backup_Display_Name: Logo
-   Storage_Path: /logo
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/expdb | /dev/block/platform/bootdevice/by-name/expdb | Size: 20MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/expdb
-   Display_Name: Expdb
-   Storage_Name: Expdb
-   Backup_Path: /expdb
-   Backup_Name: expdb
-   Backup_Display_Name: Expdb
-   Storage_Path: /expdb
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/seccfg | /dev/block/platform/bootdevice/by-name/seccfg | Size: 8MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/seccfg
-   Display_Name: Seccfg
-   Storage_Name: Seccfg
-   Backup_Path: /seccfg
-   Backup_Name: seccfg
-   Backup_Display_Name: Seccfg
-   Storage_Path: /seccfg
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/tee1 | /dev/block/platform/bootdevice/by-name/tee1 | Size: 5MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/tee1
-   Display_Name: Tee1
-   Storage_Name: Tee1
-   Backup_Path: /tee1
-   Backup_Name: tee1
-   Backup_Display_Name: Tee1
-   Storage_Path: /tee1
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/tee2 | /dev/block/platform/bootdevice/by-name/tee2 | Size: 6MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/tee2
-   Display_Name: Tee2
-   Storage_Name: Tee2
-   Backup_Path: /tee2
-   Backup_Name: tee2
-   Backup_Display_Name: Tee2
-   Storage_Path: /tee2
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/scp1 | /dev/block/platform/bootdevice/by-name/scp1 | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/scp1
-   Display_Name: Scp1
-   Storage_Name: Scp1
-   Backup_Path: /scp1
-   Backup_Name: scp1
-   Backup_Display_Name: Scp1
-   Storage_Path: /scp1
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/scp2 | /dev/block/platform/bootdevice/by-name/scp2 | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/scp2
-   Display_Name: Scp2
-   Storage_Name: Scp2
-   Backup_Path: /scp2
-   Backup_Name: scp2
-   Backup_Display_Name: Scp2
-   Storage_Path: /scp2
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/sspm_1 | /dev/block/platform/bootdevice/by-name/sspm_1 | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/sspm_1
-   Display_Name: Sspm_1
-   Storage_Name: Sspm_1
-   Backup_Path: /sspm_1
-   Backup_Name: sspm_1
-   Backup_Display_Name: Sspm_1
-   Storage_Path: /sspm_1
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/sspm_2 | /dev/block/platform/bootdevice/by-name/sspm_2 | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/sspm_2
-   Display_Name: Sspm_2
-   Storage_Name: Sspm_2
-   Backup_Path: /sspm_2
-   Backup_Name: sspm_2
-   Backup_Display_Name: Sspm_2
-   Storage_Path: /sspm_2
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/md1img | /dev/block/platform/bootdevice/by-name/md1img | Size: 100MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/md1img
-   Display_Name: Md1img
-   Storage_Name: Md1img
-   Backup_Path: /md1img
-   Backup_Name: md1img
-   Backup_Display_Name: Md1img
-   Storage_Path: /md1img
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/md1dsp |  | Size: 0MB
-   Flags: 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/md1dsp
-   Display_Name: Md1dsp
-   Storage_Name: Md1dsp
-   Backup_Path: /md1dsp
-   Backup_Name: md1dsp
-   Backup_Display_Name: Md1dsp
-   Storage_Path: /md1dsp
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/md1arm7 |  | Size: 0MB
-   Flags: 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/md1arm7
-   Display_Name: Md1arm7
-   Storage_Name: Md1arm7
-   Backup_Path: /md1arm7
-   Backup_Name: md1arm7
-   Backup_Display_Name: Md1arm7
-   Storage_Path: /md1arm7
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/md3img |  | Size: 0MB
-   Flags: 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/md3img
-   Display_Name: Md3img
-   Storage_Name: Md3img
-   Backup_Path: /md3img
-   Backup_Name: md3img
-   Backup_Display_Name: Md3img
-   Storage_Path: /md3img
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/spmfw | /dev/block/platform/bootdevice/by-name/spmfw | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/spmfw
-   Display_Name: Spmfw
-   Storage_Name: Spmfw
-   Backup_Path: /spmfw
-   Backup_Name: spmfw
-   Backup_Display_Name: Spmfw
-   Storage_Path: /spmfw
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/boot_para | /dev/block/platform/bootdevice/by-name/boot_para | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/boot_para
-   Display_Name: Boot_para
-   Storage_Name: Boot_para
-   Backup_Path: /boot_para
-   Backup_Name: boot_para
-   Backup_Display_Name: Boot_para
-   Storage_Path: /boot_para
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/dtbo1 |  | Size: 0MB
-   Flags: 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/dtbo1
-   Display_Name: Dtbo1
-   Storage_Name: Dtbo1
-   Backup_Path: /dtbo1
-   Backup_Name: dtbo1
-   Backup_Display_Name: Dtbo1
-   Storage_Path: /dtbo1
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/dtbo2 |  | Size: 0MB
-   Flags: 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/dtbo2
-   Display_Name: Dtbo2
-   Storage_Name: Dtbo2
-   Backup_Path: /dtbo2
-   Backup_Name: dtbo2
-   Backup_Display_Name: Dtbo2
-   Storage_Path: /dtbo2
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/dtbo | /dev/block/platform/bootdevice/by-name/dtbo | Size: 8MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/dtbo
-   Display_Name: Dtbo
-   Storage_Name: Dtbo
-   Backup_Path: /dtbo
-   Backup_Name: dtbo
-   Backup_Display_Name: Dtbo
-   Storage_Path: /dtbo
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/vbmeta | /dev/block/platform/bootdevice/by-name/vbmeta | Size: 8MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/vbmeta
-   Display_Name: Vbmeta
-   Storage_Name: Vbmeta
-   Backup_Path: /vbmeta
-   Backup_Name: vbmeta
-   Backup_Display_Name: Vbmeta
-   Storage_Path: /vbmeta
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/tkv | /dev/block/platform/bootdevice/by-name/tkv | Size: 1MB
-   Flags: IsPresent 
-   Primary_Block_Device: /dev/block/platform/bootdevice/by-name/tkv
-   Display_Name: Tkv
-   Storage_Name: Tkv
-   Backup_Path: /tkv
-   Backup_Name: tkv
-   Backup_Display_Name: Tkv
-   Storage_Path: /tkv
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Unable to mount /data/media during GUI startup.
-I:Loading package: TWRP (/twres/ui.xml)
-I:Load XML directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_PT.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/id.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
-parsing languageFile
-parsing languageFile done
-I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
-I:Checking resolution...
-I:Scaling theme width 0.666667x and height 0.791667x, offsets x: 0 y: 0 w: 0 h: 0
-I:Loading resources...
-I:Failed to load image from indeterminate013, error -1
-I:Loading variables...
-I:Loading mouse cursor...
-I:Loading pages...
-I:Including file: /twres/portrait.xml...
-I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
-I:Loading resources...
-I:Loading variables...
-I:Loading mouse cursor...
-I:Loading pages...
-I:Loading page main
-I:Loading page main2
-I:Loading page install
-I:Loading page flash_confirm
-I:Loading page flash_zip
-I:Loading page flash_done
-I:Loading page flash_sleep_and_reboot
-I:Loading page flashimage_confirm
-I:Loading page clear_vars
-I:Loading page reboot_system_routine
-I:Loading page confirm_action
-I:Loading page action_page
-I:Loading page singleaction_page
-I:Loading page action_complete
-I:Loading page filecheck
-I:Loading page rebootcheck
-I:Loading page wipe
-I:Loading page advancedwipe
-I:Loading page formatdata
-I:Loading page formatdata_confirm
-I:Loading page checkpartitionlist
-I:Loading page partitionoptions
-I:Loading page refreshfilesystem
-I:Loading page selectfilesystem
-I:Loading page backup
-I:Loading page multiuser_warning
-I:Loading page backup_options
-I:Loading page backupname1
-I:Loading page backupname2
-I:Loading page backupencryption
-I:Loading page backupencryption2
-I:Loading page checkbackuppassword
-I:Loading page backup_run
-I:Loading page restore
-I:Unable to open '/data/media/TWRP/BACKUPS/H624X62701234567'
-I:Loading page restore_read
-I:Loading page restore_decrypt
-I:Loading page try_restore_decrypt
-I:Loading page restore_select
-I:Loading page renamebackup
-I:Loading page restore_run
-I:Loading page mount
-I:Loading page usb_mount
-I:Loading page usb_umount
-I:Loading page system_readonly_check
-I:Loading page reboot
-I:Loading page reboot2
-I:Loading page installapp
-I:Loading page system_readonly
-I:Loading page settings
-I:Loading page settings_timezone
-I:Loading page settings_screen
-I:Loading page settings_vibration
-I:Loading page settings_language
-I:Loading page copylog
-I:Loading page advanced
-I:Loading page partsdcardsel
-I:Loading page partsdcardcheck
-I:Loading page partsdcard
-I:Loading page htcdumlock
-I:Loading page repackselect
-I:Loading page repackconfirm
-I:Loading page lock
-I:Loading page filemanagerlist
-I:Loading page filemanageroptions
-I:Loading page choosedestinationfolder
-I:Loading page filemanagerrenamefile
-I:Loading page filemanagerrenamefolder
-I:Loading page filemanagerchmod
-I:Loading page filemanagerconfirm
-I:Loading page filemanageraction
-I:Loading page decrypt
-I:Loading page decrypt_pattern
-I:Loading page trydecrypt
-I:Loading page terminalcommand
-I:Loading page sideload
-I:Loading page fixcontexts
-I:Loading page slideout
-I:Loading page select_storage
-I:Loading page select_language
-I:Loading page decrypt_users
-I:Loading page changeTwrpFolder
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Switching packages (TWRP)
-Boot command: bootonce-bootloader
-Startup Commands: 
-ro.boot.bootreason=reboot
-ro.boottime.adbd=2704999846
-ro.boottime.init=2250
-ro.boottime.init.selinux=199
-ro.boottime.init.cold_boot_wait=141
-ro.boottime.charger=2701849307
-ro.boottime.ueventd=2530142923
-ro.boottime.recovery=2702661692
-ro.boottime.set_permissive=2701056230
-ro.config.ringtone=omni_ringtone1.ogg,omni_ringtone1.ogg
-ro.config.alarm_alert=omni_alarm1.ogg
-ro.config.notification_sound=omni_notification1.ogg
-ro.dalvik.vm.native.bridge=0
-dalvik.vm.isa.arm.variant=generic
-dalvik.vm.isa.arm.features=default
-dalvik.vm.dexopt.secondary=true
-dalvik.vm.usejit=true
-dalvik.vm.lockprof.threshold=500
-dalvik.vm.dex2oat-Xms=64m
-dalvik.vm.dex2oat-Xmx=512m
-dalvik.vm.appimageformat=lz4
-dalvik.vm.usejitprofiles=true
-dalvik.vm.stack-trace-dir=/data/anr
-dalvik.vm.image-dex2oat-Xms=64m
-dalvik.vm.image-dex2oat-Xmx=64m
-dalvik.vm.image-dex2oat-filter=verify-at-runtime
-dalvik.vm.dex2oat-minidebuginfo=true
-debug.atrace.tags.enableflags=0
-ro.art.hiddenapi.warning=1
-ro.com.google.clientidbase=android-google
-ro.com.android.dataroaming=false
-ro.com.android.wifi-watchlist=GoogleGuest
-ro.opa.eligible_device=true
-ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
-ro.boot.mode=recovery
-ro.boot.dtbo_idx=0
-ro.boot.hardware=mt6761
-ro.boot.avb_version=1.1
-ro.boot.meta_log_disable=0
-ro.boot.verifiedbootstate=orange
-ro.omni.device=Nova
-ro.omni.version=9-20211024-Nova-HOMEMADE
-ro.omni.version.security_patch=
-ro.twrp.sar=true
-ro.twrp.boot=1
-ro.twrp.version=3.5.2_9-0
-ro.vndk.lite=true
-ro.vndk.version=28
-ro.wifi.channels=
-ro.allow.mock.location=1
-ro.build.id=PQ3B.190801.002
-ro.build.date=Sun Oct 24 20:15:46 UTC 2021
-ro.build.date.utc=1635106546
-ro.build.host=fv-az36-823
-ro.build.tags=test-keys
-ro.build.type=eng
-ro.build.user=runner
-ro.build.flavor=omni_Nova-eng
-ro.build.display.id=omni_Nova-eng 16.1.0 PQ3B.190801.002 eng.runner.20211024.201612 test-keys
-ro.build.product=Nova
-ro.build.selinux=1
-ro.build.version.sdk=28
-ro.build.version.base_os=
-ro.build.version.release=16.1.0
-ro.build.version.codename=REL
-ro.build.version.incremental=eng.runner.20211024.201612
-ro.build.version.preview_sdk=0
-ro.build.version.all_codenames=REL
-ro.build.version.security_patch=2099-12-31
-ro.build.version.min_supported_target_sdk=17
-ro.build.description=omni_Nova-eng 16.1.0 PQ3B.190801.002 eng.runner.20211024.201612 test-keys
-ro.build.characteristics=default
-ro.bionic.ld.warning=1
-ro.kernel.android.checkjni=1
-ro.secure=0
-ro.treble.enabled=false
-ro.zygote=zygote32
-ro.carrier=unknown
-ro.product.cpu.abi=armeabi-v7a
-ro.product.cpu.abi2=armeabi
-ro.product.cpu.abilist=armeabi-v7a,armeabi
-ro.product.cpu.abilist32=armeabi-v7a,armeabi
-ro.product.cpu.abilist64=
-ro.product.name=omni_Nova
-ro.product.brand=Infinix
-ro.product.model=Infinix X627
-ro.product.device=Nova
-ro.product.locale=en-US
-ro.product.manufacturer=infinix
-ro.baseband=unknown
-ro.bootmode=recovery
-ro.hardware=mt6761
-ro.revision=0
-ro.services.whitelist.packagelist=com.google.android.gms
-ro.bootimage.build.date=Sun Oct 24 20:15:46 UTC 2021
-ro.bootimage.build.date.utc=1635106546
-ro.bootimage.build.fingerprint=Infinix/omni_Nova/Nova:16.1.0/PQ3B.190801.002/runner10242015:eng/test-keys
-ro.bootloader=unknown
-ro.debuggable=1
-ro.modversion=OmniROM-9-20211024-Nova-HOMEMADE
-ro.setupwizard.enterprise_mode=1
-ro.property_service.version=2
-ro.control_privapp_permissions=enforce
-ro.actionable_compatible_property.enabled=false
-init.svc.adbd=running
-init.svc.charger=running
-init.svc.ueventd=running
-init.svc.recovery=running
-init.svc.set_permissive=stopped
-twrp.crash_counter=0
-twrp.action_complete=0
-crypto.ready=1
-keyguard.no_require_sim=true
-tombstoned.max_tombstone_count=50
-sys.usb.ffs.ready=1
-sys.usb.ffs.aio_compat=1
-ro.build.fingerprint=Infinix/omni_Nova/Nova:16.1.0/PQ3B.190801.002/runner10242015:eng/test-keys
-log.tag.stats_log=I
-ro.logd.size.stats=64K
-ro.persistent_properties.ready=true
-pm.dexopt.boot=extract
-pm.dexopt.ab-ota=speed-profile
-pm.dexopt.shared=speed
-pm.dexopt.install=speed-profile
-pm.dexopt.inactive=verify
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.first-boot=extract
-ro.boot.serialno=H624X62701234567
-ro.serialno=H624X62701234567
-service.adb.root=1
-net.bt.name=Android
-net.tethering.noprovisioning=true
-sys.usb.state=adb
-sys.usb.acm_cnt=0
-sys.usb.acm_port0=
-sys.usb.acm_port1=
-sys.usb.acm_enable=0
-sys.usb.controller=musb-hdrc
-persist.sys.usb.config=adb
-persist.sys.dalvik.vm.lib.2=libart.so
-persist.sys.disable_rescue=true
-sys.usb.config=adb
-ro.crypto.type=file
-ro.crypto.state=encrypted
-
-SELinux contexts loaded from /file_contexts
-Full SELinux support is present.
-tw_get_context failed to get selinux context
-I:Failed to get default contexts and file mode for storage files.
-I:Path /cache/recovery/log.gz does not exist. Unable to copy /cache/recovery/last_log.gz
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-Unable to mount /data/media/TWRP/.twrps
-I:Attempt to load settings from settings file...
-I:InfoManager file '/data/media/TWRP/.twrps' not found.
-I:Backup folder set to '/data/media/TWRP/BACKUPS/H624X62701234567'
-I:Copied file /etc/recovery.fstab to /cache/recovery/recovery.fstab
-I:Version number saved to '/cache/recovery/.version'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/mmcblk0rpmb
-I:Unable to mount '/usb-otg'
-I:Actual block device: '/dev/block/mmcblk0rpmb', current file system: 'vfat'
-I:TWFunc::Set_Brightness: Setting brightness control to 255
-I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
-parsing languageFile
-parsing languageFile done
-I:Translating partition display names
-I:Backup folder set to '/data/media/TWRP/BACKUPS/H624X62701234567'
-I:Starting MTP
-I:Cannot find file /sys/class/android_usb/android0/idVendor
-I:Cannot find file /sys/class/android_usb/android0/idProduct
-I:[MTP] Starting MTP
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:sending message to add 65537 '/external_sd' 'Micro SD card'
-I:Message sent, add storage ID: 65537 '/external_sd'
-I:Can't probe device /dev/block/mmcblk0rpmb
-I:Unable to mount '/usb-otg'
-I:Actual block device: '/dev/block/mmcblk0rpmb', current file system: 'vfat'
-MTP Enabled
-I:Switching packages (TWRP)
-I:Set page: 'system_readonly'
-I:Found no matching fstab entry for uevent device '/devices/platform/externdevice/mmc_host/mmc1/mmc1:0001/block/mmcblk1' - add
-I:[MTP] created new mtpserver object
-I:[MTP] mtppipe add storage 65537 '/external_sd'
-E:[MTP] Failed to start usb driver!I:operation_start: 'Toggle System Mount'
-I:operation_end - status=0
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Starting Adb Backup FIFO
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Data partition cannot be mounted during app check
-I:App not installed
-I:Switching packages (TWRP)
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set overlay: 'slideout'
-I:Set overlay: ''
-I:Set page: 'advanced'
-I:Set page: 'filemanagerlist'
-I:TWFunc::Set_Brightness: Setting brightness control to 5
-I:TWFunc::Set_Brightness: Setting brightness control to 255
-E:[MTP] request read returned -1, errno: 5I:TWFunc::Set_Brightness: Setting brightness control to 5
-I:TWFunc::Set_Brightness: Setting brightness control to 0
-I:TWFunc::Set_Brightness: Setting brightness control to 255
-I:Set overlay: ''
-I:Set overlay: 'slideout'
-I:Set overlay: ''
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'install'
-I:Set overlay: 'select_storage'
-I:No recovery folder found. Using default folder.
-I:Backup folder set to '/external_sd/TWRP/BACKUPS/H624X62701234567'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'advanced'
-I:Set page: 'filemanagerlist'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'install'
-I:Set overlay: 'select_storage'
-I:No recovery folder found. Using default folder.
-I:Backup folder set to '/external_sd/TWRP/BACKUPS/H624X62701234567'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set overlay: 'select_storage'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set overlay: 'select_storage'
-I:Can't probe device /dev/block/mmcblk0rpmb
-I:Unable to mount '/usb-otg'
-I:Actual block device: '/dev/block/mmcblk0rpmb', current file system: 'vfat'
-I:No recovery folder found. Using default folder.
-I:Backup folder set to '/external_sd/TWRP/BACKUPS/H624X62701234567'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-Truncating string cache entries.
-I:Set overlay: 'select_storage'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set overlay: 'select_storage'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'advanced'
-I:Set page: 'filemanagerlist'
-I:Set page: 'filemanageroptions'
-I:Set page: 'terminalcommand'
-I:Set page: 'advanced'
-I:Unable to switch to Terminal
-I:Set page: 'filemanagerlist'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'install'
-I:Set overlay: 'select_storage'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'install'
-I:Set overlay: 'select_storage'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:No recovery folder found. Using default folder.
-I:Backup folder set to '/external_sd/TWRP/BACKUPS/H624X62701234567'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:No recovery folder found. Using default folder.
-I:Backup folder set to '/external_sd/TWRP/BACKUPS/H624X62701234567'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:Set overlay: ''
-I:Set page: 'clear_vars'
-I:Set page: 'install'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'mount'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'advanced'
-I:Set page: 'filemanagerlist'
-Truncating string cache entries.
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'advanced'
-I:Set page: 'copylog'
-I:Set page: 'action_page'
-I:operation_start: 'Copy Log'
-E:[MTP] Mtp send event failed: No such device
-E:[MTP] Mtp send event failed: No such device
-I:Copied file /tmp/recovery.log to /external_sd/recovery.log
-E:[MTP] Mtp send event failed: No such device
-Copied recovery log to /external_sd/recovery.log.
-I:Set page: 'action_complete'
-I:operation_end - status=0
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'mount'
-I:operation_start: 'Stop MTP'
-I:Disabling MTP
-I:operation_end - status=0
-I:operation_start: 'Start MTP'
-I:Cannot find file /sys/class/android_usb/android0/idVendor
-I:Cannot find file /sys/class/android_usb/android0/idProduct
-I:[MTP] Starting MTP
-I:Can't probe device /dev/block/platform/bootdevice/by-name/userdata
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/platform/bootdevice/by-name/userdata', current file system: 'f2fs'
-I:sending message to add 65537 '/external_sd' 'Micro SD card'
-I:Message sent, add storage ID: 65537 '/external_sd'
-I:Can't probe device /dev/block/mmcblk0rpmb
-I:Unable to mount '/usb-otg'
-I:Actual block device: '/dev/block/mmcblk0rpmb', current file system: 'vfat'
-I:operation_end - status=0
-I:[MTP] created new mtpserver object
-E:[MTP] Failed to start usb driver!I:[MTP] mtppipe add storage 65537 '/external_sd'
-I:TWFunc::Set_Brightness: Setting brightness control to 5
-I:TWFunc::Set_Brightness: Setting brightness control to 0
-I:TWFunc::Set_Brightness: Setting brightness control to 255
-I:Set overlay: ''
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'advanced'
-I:Set page: 'copylog'
-I:Set page: 'action_page'
-I:operation_start: 'Copy Log'
+--------- beginning of main
+01-01 00:02:37.666   298   299 I adbd    : initializing functionfs
+01-01 00:02:37.666   298   299 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+01-01 00:02:37.670   298   299 I adbd    : functionfs successfully initialized
+01-01 00:02:37.670   298   299 I adbd    : registering usb transport
+01-01 00:02:37.671   298   301 E cutils-trace: Error opening trace file: No such file or directory (2)
+01-01 00:02:31.096   297   297 W auditd  : type=2000 audit(0.0:1): initialized
+01-01 00:02:32.280   297   297 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+01-01 00:02:32.280   297   297 W auditd  : type=1404 audit(0.0:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+01-01 00:02:32.370     1     1 W init    : type=1400 audit(0.0:4): avc: denied { relabelto } for name="boot" dev="tmpfs" ino=1278 scontext=u:r:init:s0 tcontext=u:object_r:boot_block_device:s0 tclass=lnk_file permissive=0
+01-01 00:02:32.370     1     1 W init    : type=1400 audit(0.0:5): avc: denied { mac_admin } for capability=33 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability2 permissive=0
+01-01 00:02:32.370   297   297 W auditd  : type=1401 audit(0.0:6): op=setxattr invalid_context="u:object_r:vbmeta_block_device:s0"
+01-01 00:02:32.370     1     1 W init    : type=1400 audit(0.0:7): avc: denied { mac_admin } for capability=33 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability2 permissive=0
+01-01 00:02:32.370   297   297 W auditd  : type=1401 audit(0.0:8): op=setxattr invalid_context="u:object_r:vendor_block_device:s0"
+01-01 00:02:32.380   251   251 W init    : type=1400 audit(0.0:9): avc: denied { read } for name="vendor_file_contexts" dev="rootfs" ino=10798 scontext=u:r:vendor_init:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+01-01 00:02:32.380     1     1 W init    : type=1400 audit(0.0:10): avc: denied { setcheckreqprot } for scontext=u:r:init:s0 tcontext=u:object_r:kernel:s0 tclass=security permissive=0
+01-01 00:02:37.650   297   297 I init    : type=1400 audit(0.0:420): avc: denied { entrypoint } for path="/sbin/logd" dev="rootfs" ino=7716 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+01-01 00:02:37.650   297   297 I logd    : type=1400 audit(0.0:421): avc: denied { read execute } for path="/sbin/logd" dev="rootfs" ino=7716 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+01-01 00:02:37.650   297   297 I logd    : type=1400 audit(0.0:422): avc: denied { getattr } for path="/sbin/logd" dev="rootfs" ino=7716 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+01-01 00:02:37.650   297   297 I logd    : type=1400 audit(0.0:423): avc: denied { open } for path="/sbin/ld.config.txt" dev="rootfs" ino=7639 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+01-01 00:02:37.660     1     1 I init    : type=1400 audit(0.0:424): avc: denied { write } for name="saving" dev="sysfs" ino=12640 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 00:02:37.660     1     1 I init    : type=1400 audit(0.0:425): avc: denied { open } for path="/sys/devices/platform/mt_usb/saving" dev="sysfs" ino=12640 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 00:02:37.690   262   262 I recovery: type=1400 audit(0.0:426): avc: denied { read } for name="temp" dev="sysfs" ino=18686 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 00:02:37.690   262   262 I recovery: type=1400 audit(0.0:427): avc: denied { open } for path="/sys/devices/virtual/thermal/thermal_zone0/temp" dev="sysfs" ino=18686 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 00:02:37.690   262   262 I recovery: type=1400 audit(0.0:428): avc: denied { getattr } for path="/sys/devices/virtual/thermal/thermal_zone0/temp" dev="sysfs" ino=18686 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 00:02:37.770   253   253 I ueventd : type=1400 audit(0.0:429): avc: denied { mac_admin } for capability=33 scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability2 permissive=1
+01-01 00:02:37.770   253   253 I ueventd : type=1400 audit(0.0:430): avc: denied { create } for name="mmcblk1" scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+01-01 00:02:37.770   253   253 I ueventd : type=1400 audit(0.0:431): avc: denied { setattr } for name="mmcblk1" dev="tmpfs" ino=14645 scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+01-01 00:02:37.780   253   253 I ueventd : type=1400 audit(0.0:432): avc: denied { create } for name="mmcblk1p1" scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+01-01 00:02:37.780   253   253 I ueventd : type=1400 audit(0.0:433): avc: denied { setattr } for name="mmcblk1p1" dev="tmpfs" ino=14648 scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+01-01 00:02:38.070   262   262 I recovery: type=1400 audit(0.0:434): avc: denied { getattr } for path="/vndservice_contexts" dev="rootfs" ino=10830 scontext=u:r:recovery:s0 tcontext=u:object_r:vndservice_contexts_file:s0 tclass=file permissive=1
+01-01 00:02:38.990   262   262 I recovery: type=1400 audit(0.0:512): avc: denied { write } for name="brightness" dev="sysfs" ino=24330 scontext=u:r:recovery:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 00:02:39.003   298   302 E adbd    : remote usb: read terminated (message): No such device
+01-01 00:02:39.087   318   320 I adbd    : initializing functionfs
+01-01 00:02:39.087   318   320 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+01-01 00:02:39.088   318   320 I adbd    : functionfs successfully initialized
+01-01 00:02:39.088   318   320 I adbd    : registering usb transport
+01-01 00:02:39.088   318   321 E cutils-trace: Error opening trace file: No such file or directory (2)
+01-01 00:02:39.090   262   262 I recovery: type=1400 audit(0.0:513): avc: denied { create } for name="orsin" scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=fifo_file permissive=1
+01-01 00:02:39.090   262   262 I recovery: type=1400 audit(0.0:514): avc: denied { read } for name="orsin" dev="rootfs" ino=14680 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=fifo_file permissive=1
+01-01 00:02:39.090   262   262 I recovery: type=1400 audit(0.0:515): avc: denied { open } for path="/sbin/orsin" dev="rootfs" ino=14680 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=fifo_file permissive=1
+01-01 00:02:39.090   262   262 I recovery: type=1400 audit(0.0:516): avc: denied { read } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_kobject_uevent_socket permissive=1
+01-01 00:02:56.420   262   262 I recovery: type=1400 audit(0.0:523): avc: denied { create } for name="twadbfifo" scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1
+01-01 00:02:56.420   262   262 I recovery: type=1400 audit(0.0:524): avc: denied { read } for name="twadbfifo" dev="tmpfs" ino=6499 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1
+01-01 00:02:56.420   262   262 I recovery: type=1400 audit(0.0:525): avc: denied { open } for path="/tmp/twadbfifo" dev="tmpfs" ino=6499 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1
+01-01 00:02:56.680   262   262 I recovery: type=1400 audit(0.0:526): avc: denied { unlink } for name="orsin" dev="rootfs" ino=14680 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=fifo_file permissive=1
+01-01 00:03:01.320   262   262 I recovery: type=1400 audit(0.0:527): avc: denied { getattr } for path="/vendor_service_contexts" dev="rootfs" ino=10829 scontext=u:r:recovery:s0 tcontext=u:object_r:nonplat_service_contexts_file:s0 tclass=file permissive=1
+01-01 00:03:01.320   262   262 I recovery: type=1400 audit(0.0:528): avc: denied { getattr } for path="/vendor_seapp_contexts" dev="rootfs" ino=10828 scontext=u:r:recovery:s0 tcontext=u:object_r:seapp_contexts_file:s0 tclass=file permissive=1
+01-01 00:03:01.320   262   262 I recovery: type=1400 audit(0.0:529): avc: denied { getattr } for path="/vendor_hwservice_contexts" dev="rootfs" ino=10826 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservice_contexts_file:s0 tclass=file permissive=1
+01-01 00:03:01.320   262   262 I recovery: type=1400 audit(0.0:530): avc: denied { getattr } for path="/sepolicy" dev="rootfs" ino=7859 scontext=u:r:recovery:s0 tcontext=u:object_r:sepolicy_file:s0 tclass=file permissive=1
+01-01 00:03:01.320   262   262 I recovery: type=1400 audit(0.0:531): avc: denied { getattr } for path="/plat_service_contexts" dev="rootfs" ino=7543 scontext=u:r:recovery:s0 tcontext=u:object_r:service_contexts_file:s0 tclass=file permissive=1
+01-01 00:03:37.710   343   343 I recovery: type=1400 audit(0.0:532): avc: denied { read write } for name="0" dev="devpts" ino=3 scontext=u:r:recovery:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+01-01 00:03:37.710   343   343 I recovery: type=1400 audit(0.0:533): avc: denied { open } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:recovery:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+01-01 00:03:37.710   343   343 I recovery: type=1400 audit(0.0:534): avc: denied { ioctl } for path="/dev/pts/0" dev="devpts" ino=3 ioctlcmd=0x540e scontext=u:r:recovery:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+01-01 00:03:37.720   343   343 I sh      : type=1400 audit(0.0:535): avc: denied { getattr } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:recovery:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+01-01 00:03:53.634   345   345 F keystore: keystore_main.cpp:135] Check failed: argc >= 2 A directory must be specified!
+--------- beginning of crash
+01-01 00:03:53.634   345   345 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 345 (keystore), pid 345 (keystore)
+01-01 00:03:53.635   347   347 F libc    : exec failed: No such file or directory
+01-01 00:03:53.636   345   345 F libc    : crash_dump helper failed to exec
+01-01 00:03:55.623   348   348 F keystore: keystore_main.cpp:135] Check failed: argc >= 2 A directory must be specified!
+01-01 00:03:55.623   348   348 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 348 (keystore), pid 348 (keystore)
+01-01 00:03:55.624   350   350 F libc    : exec failed: No such file or directory
+01-01 00:03:55.625   348   348 F libc    : crash_dump helper failed to exec
+01-01 00:03:56.722   351   351 F keystore: keystore_main.cpp:135] Check failed: argc >= 2 A directory must be specified!
+01-01 00:03:56.722   351   351 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 351 (keystore), pid 351 (keystore)
+01-01 00:03:56.723   353   353 F libc    : exec failed: No such file or directory
+01-01 00:03:56.724   351   351 F libc    : crash_dump helper failed to exec
+01-01 00:03:59.384   354   354 F keystore: keystore_main.cpp:135] Check failed: argc >= 2 A directory must be specified!
+01-01 00:03:59.385   354   354 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 354 (keystore), pid 354 (keystore)
+01-01 00:03:59.386   356   356 F libc    : exec failed: No such file or directory
+01-01 00:03:59.386   354   354 F libc    : crash_dump helper failed to exec
+01-01 00:04:06.480   357   357 I logcat  : type=1400 audit(0.0:536): avc: denied { write } for name="logdr" dev="tmpfs" ino=11634 scontext=u:r:recovery:s0 tcontext=u:object_r:logdr_socket:s0 tclass=sock_file permissive=1
+01-01 00:04:06.480   357   357 I logcat  : type=1400 audit(0.0:537): avc: denied { connectto } for path="/dev/socket/logdr" scontext=u:r:recovery:s0 tcontext=u:r:logd:s0 tclass=unix_stream_socket permissive=1
+01-01 00:05:04.684   362   362 F keystore: keystore_main.cpp:135] Check failed: argc >= 2 A directory must be specified!
+01-01 00:05:04.685   362   362 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 362 (keystore), pid 362 (keystore)
+01-01 00:05:04.686   364   364 F libc    : exec failed: No such file or directory
+01-01 00:05:04.687   362   362 F libc    : crash_dump helper failed to exec
+01-01 00:05:06.175   365   365 F keystore: keystore_main.cpp:135] Check failed: argc >= 2 A directory must be specified!
+01-01 00:05:06.175   365   365 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 365 (keystore), pid 365 (keystore)
+01-01 00:05:06.176   367   367 F libc    : exec failed: No such file or directory
+01-01 00:05:06.177   365   365 F libc    : crash_dump helper failed to exec
+01-01 00:05:25.021   368   368 E ServiceManager: failed to open binder driver --help
+01-01 00:05:31.060   369   369 I servicemanager: type=1400 audit(0.0:538): avc: denied { set_context_mgr } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=binder permissive=1
+01-01 00:05:31.060   369   369 I servicemanager: type=1400 audit(0.0:539): avc: denied { read } for name="plat_service_contexts" dev="rootfs" ino=6554 scontext=u:r:recovery:s0 tcontext=u:object_r:service_contexts_file:s0 tclass=file permissive=1
+01-01 00:05:31.060   369   369 I servicemanager: type=1400 audit(0.0:540): avc: denied { read } for name="vendor_service_contexts" dev="rootfs" ino=10829 scontext=u:r:recovery:s0 tcontext=u:object_r:nonplat_service_contexts_file:s0 tclass=file permissive=1
+01-01 00:05:31.060   369   369 I servicemanager: type=1400 audit(0.0:541): avc: denied { open } for path="/vendor_service_contexts" dev="rootfs" ino=10829 scontext=u:r:recovery:s0 tcontext=u:object_r:nonplat_service_contexts_file:s0 tclass=file permissive=1
+01-01 00:05:31.060   369   369 I servicemanager: type=1400 audit(0.0:542): avc: denied { open } for path="/system/etc/selinux/plat_service_contexts" dev="rootfs" ino=6554 scontext=u:r:recovery:s0 tcontext=u:object_r:service_contexts_file:s0 tclass=file permissive=1
+01-01 00:05:31.072   369   369 I SELinux : SELinux: Loaded service_contexts from:
+01-01 00:05:31.074   369   369 I SELinux :     /system/etc/selinux/plat_service_contexts
+01-01 00:05:31.074   369   369 I SELinux :     /vendor_service_contexts
+01-01 00:05:38.500   262   262 I recovery: type=1400 audit(0.0:543): avc: denied { getattr } for path="/vndservice_contexts" dev="rootfs" ino=10830 scontext=u:r:recovery:s0 tcontext=u:object_r:vndservice_contexts_file:s0 tclass=file permissive=1
+01-01 00:05:43.590   262   262 I recovery: type=1400 audit(0.0:544): avc: denied { write } for name="/" dev="rootfs" ino=1 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+01-01 00:05:46.690   262   262 I recovery: type=1400 audit(0.0:545): avc: denied { getattr } for path="/system_root/storage" dev="mmcblk0p20" ino=7898 scontext=u:r:recovery:s0 tcontext=u:object_r:storage_file:s0 tclass=dir permissive=1
+01-01 00:05:54.540   262   262 I recovery: type=1400 audit(0.0:546): avc: denied { remove_name } for name="system" dev="rootfs" ino=7862 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+01-01 00:05:54.540   262   262 I recovery: type=1400 audit(0.0:547): avc: denied { rmdir } for name="system" dev="rootfs" ino=7862 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+01-01 00:06:02.280   262   262 I recovery: type=1400 audit(0.0:548): avc: denied { getattr } for path="/system/bin/hwservicemanager" dev="rootfs" ino=6548 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservicemanager_exec:s0 tclass=file permissive=1
+01-01 00:06:02.280   262   262 I recovery: type=1400 audit(0.0:549): avc: denied { getattr } for path="/system/bin/gatekeeperd" dev="rootfs" ino=14697 scontext=u:r:recovery:s0 tcontext=u:object_r:gatekeeperd_exec:s0 tclass=file permissive=1
+01-01 00:06:02.280   262   262 I recovery: type=1400 audit(0.0:550): avc: denied { getattr } for path="/system/bin/servicemanager" dev="rootfs" ino=11704 scontext=u:r:recovery:s0 tcontext=u:object_r:servicemanager_exec:s0 tclass=file permissive=1
+01-01 00:06:02.280   262   262 I recovery: type=1400 audit(0.0:551): avc: denied { getattr } for path="/system/bin/keystore" dev="rootfs" ino=14696 scontext=u:r:recovery:s0 tcontext=u:object_r:keystore_exec:s0 tclass=file permissive=1
+01-01 00:06:14.081   372   372 I SELinux : SELinux: Loaded service_contexts from:
+01-01 00:06:14.082   372   372 I SELinux :     /system/etc/selinux/plat_service_contexts
+01-01 00:06:14.082   372   372 I SELinux :     /vendor_service_contexts
+01-01 00:06:22.639   373   373 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+01-01 00:06:22.640   373   373 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+01-01 00:06:22.640   373   373 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+01-01 00:06:22.640   373   373 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+01-01 00:06:22.630   373   373 I hwservicemanage: type=1400 audit(0.0:552): avc: denied { read } for name="plat_hwservice_contexts" dev="rootfs" ino=6557 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservice_contexts_file:s0 tclass=file permissive=1
+01-01 00:06:22.630   373   373 I hwservicemanage: type=1400 audit(0.0:553): avc: denied { open } for path="/system/etc/selinux/plat_hwservice_contexts" dev="rootfs" ino=6557 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservice_contexts_file:s0 tclass=file permissive=1
+01-01 00:06:22.630   373   373 I hwservicemanage: type=1400 audit(0.0:554): avc: denied { create } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+01-01 00:06:22.630   373   373 I hwservicemanage: type=1400 audit(0.0:555): avc: denied { bind } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+01-01 00:06:22.630   373   373 I hwservicemanage: type=1400 audit(0.0:556): avc: denied { read } for name="perms" dev="selinuxfs" ino=67112181 scontext=u:r:recovery:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir permissive=1
+01-01 00:06:22.630   373   373 I hwservicemanage: type=1400 audit(0.0:557): avc: denied { open } for path="/sys/fs/selinux/class/hwservice_manager/perms" dev="selinuxfs" ino=67112181 scontext=u:r:recovery:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir permissive=1
+01-01 00:06:22.642   373   373 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=373 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:06:22.644   373   373 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=373 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:06:22.645   373   373 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=373 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:06:22.645   373   373 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+01-01 00:06:22.648   322   322 E adbd    : remote usb: read terminated (message): No such device
+01-01 00:06:22.649   318   318 I adbd    : closing functionfs transport
+01-01 00:06:22.650   373   373 I hwservicemanager: hwservicemanager is ready now.
+01-01 00:06:22.651   373   373 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xa85740c0)
+01-01 00:06:22.651   373   373 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 373 (hwservicemanage), pid 373 (hwservicemanage)
+01-01 00:06:22.653   375   375 F libc    : exec failed: No such file or directory
+01-01 00:06:22.653   373   373 F libc    : crash_dump helper failed to exec
+01-01 00:06:22.896   318   320 I adbd    : initializing functionfs
+01-01 00:06:22.896   318   320 I adbd    : functionfs successfully initialized
+01-01 00:06:22.896   318   320 I adbd    : registering usb transport
+01-01 00:06:31.169   378   378 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+01-01 00:06:31.169   378   378 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+01-01 00:06:31.169   378   378 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+01-01 00:06:31.169   378   378 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+01-01 00:06:31.171   378   378 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=378 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:06:31.173   378   378 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=378 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:06:31.173   378   378 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=378 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+01-01 00:06:31.173   378   378 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+01-01 00:06:31.175   318   377 E adbd    : remote usb: read terminated (message): No such device
+01-01 00:06:31.176   318   318 I adbd    : closing functionfs transport
+01-01 00:06:31.177   378   378 I hwservicemanager: hwservicemanager is ready now.
+01-01 00:06:31.178   378   378 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb321b0c0)
+01-01 00:06:31.178   378   378 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 378 (hwservicemanage), pid 378 (hwservicemanage)
+01-01 00:06:31.179   380   380 F libc    : exec failed: No such file or directory
+01-01 00:06:31.179   378   378 F libc    : crash_dump helper failed to exec
+01-01 00:06:31.386   318   320 I adbd    : initializing functionfs
+01-01 00:06:31.386   318   320 I adbd    : functionfs successfully initialized
+01-01 00:06:31.386   318   320 I adbd    : registering usb transport
+01-01 00:07:12.633   383   383 I gatekeeperd: Starting gatekeeperd...
+01-01 00:07:12.633   383   383 E gatekeeperd: A directory must be specified!
+01-01 00:07:17.954   384   384 I gatekeeperd: Starting gatekeeperd...
+01-01 00:07:17.954   384   384 E gatekeeperd: chdir: --help: No such file or directory
