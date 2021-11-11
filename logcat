@@ -1,76 +1,321 @@
-C:\Users\Home>adb logcat
 --------- beginning of main
-11-02 18:05:02.099   286   286 W auditd  : type=2000 audit(0.0:1): initialized
-11-02 18:05:03.330   286   286 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
-11-02 18:05:03.330   286   286 W auditd  : type=1404 audit(0.0:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
-11-02 18:05:03.430     1     1 W init    : type=1400 audit(0.0:4): avc: denied { relabelto } for name="boot" dev="tmpfs" ino=14442 scontext=u:r:init:s0 tcontext=u:object_r:boot_block_device:s0 tclass=lnk_file permissive=0
-11-02 18:05:03.430     1     1 W init    : type=1400 audit(0.0:5): avc: denied { mac_admin } for capability=33 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability2 permissive=0
-11-02 18:05:03.430   286   286 W auditd  : type=1401 audit(0.0:6): op=setxattr invalid_context="u:object_r:vbmeta_block_device:s0"
-11-02 18:05:03.430     1     1 W init    : type=1400 audit(0.0:7): avc: denied { mac_admin } for capability=33 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability2 permissive=0
-11-02 18:05:03.430   286   286 W auditd  : type=1401 audit(0.0:8): op=setxattr invalid_context="u:object_r:vendor_block_device:s0"
-11-02 18:05:03.440   253   253 W init    : type=1400 audit(0.0:10): avc: denied { read } for name="plat_file_contexts" dev="rootfs" ino=1852 scontext=u:r:vendor_init:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
-11-02 18:05:08.720   286   286 I init    : type=1400 audit(0.0:483): avc: denied { entrypoint } for path="/sbin/logd" dev="rootfs" ino=1642 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
-11-02 18:05:08.720   286   286 I logd    : type=1400 audit(0.0:484): avc: denied { read execute } for path="/sbin/logd" dev="rootfs" ino=1642 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
-11-02 18:05:08.720   286   286 I logd    : type=1400 audit(0.0:485): avc: denied { getattr } for path="/sbin/logd" dev="rootfs" ino=1642 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
-11-02 18:05:08.720   286   286 I logd    : type=1400 audit(0.0:486): avc: denied { open } for path="/sbin/ld.config.txt" dev="rootfs" ino=1528 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
-11-02 18:05:08.790   254   254 I ueventd : type=1400 audit(0.0:487): avc: denied { mac_admin } for capability=33 scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability2 permissive=1
-11-02 18:05:08.790   254   254 I ueventd : type=1400 audit(0.0:488): avc: denied { create } for name="mmcblk1" scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
-11-02 18:05:08.790   254   254 I ueventd : type=1400 audit(0.0:489): avc: denied { setattr } for name="mmcblk1" dev="tmpfs" ino=7675 scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
-11-02 18:05:08.790   254   254 I ueventd : type=1400 audit(0.0:490): avc: denied { create } for name="mmcblk1p1" scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
-11-02 18:05:08.790   254   254 I ueventd : type=1400 audit(0.0:491): avc: denied { setattr } for name="mmcblk1p1" dev="tmpfs" ino=7678 scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
-11-02 18:05:41.700   269   269 I recovery: type=1400 audit(0.0:492): avc: denied { getattr } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=7678 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
-11-02 18:05:41.700   269   269 I recovery: type=1400 audit(0.0:493): avc: denied { read } for name="mmcblk1p1" dev="tmpfs" ino=7678 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
-11-02 18:05:41.700   269   269 I recovery: type=1400 audit(0.0:494): avc: denied { open } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=7678 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
-11-02 18:05:41.700   269   269 I recovery: type=1400 audit(0.0:495): avc: denied { ioctl } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=7678 ioctlcmd=0x1272 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
-11-02 18:05:42.200   269   269 I recovery: type=1400 audit(0.0:496): avc: denied { create } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_kobject_uevent_socket permissive=1
-11-02 18:05:42.200   269   269 I recovery: type=1400 audit(0.0:497): avc: denied { bind } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_kobject_uevent_socket permissive=1
-11-02 18:05:42.750   269   269 I recovery: type=1400 audit(0.0:498): avc: denied { getattr } for path="/vndservice_contexts" dev="rootfs" ino=10932 scontext=u:r:recovery:s0 tcontext=u:object_r:vndservice_contexts_file:s0 tclass=file permissive=1
-11-02 18:05:42.750   269   269 I recovery: type=1400 audit(0.0:499): avc: denied { getattr } for path="/vendor_seapp_contexts" dev="rootfs" ino=10930 scontext=u:r:recovery:s0 tcontext=u:object_r:seapp_contexts_file:s0 tclass=file permissive=1
-11-02 18:05:42.750   269   269 I recovery: type=1400 audit(0.0:500): avc: denied { getattr } for path="/vendor_hwservice_contexts" dev="rootfs" ino=10928 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservice_contexts_file:s0 tclass=file permissive=1
-11-02 18:05:49.010   269   269 I recovery: type=1400 audit(0.0:572): avc: denied { fsetid } for capability=4 scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=capability permissive=1
-11-02 18:05:49.980   269   269 I recovery: type=1400 audit(0.0:573): avc: denied { unlink } for name="orsin" dev="rootfs" ino=14779 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=fifo_file permissive=1
-11-02 18:05:50.810   269   269 I recovery: type=1400 audit(0.0:574): avc: denied { create } for name="twadbfifo" scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1
-11-02 18:05:50.810   269   269 I recovery: type=1400 audit(0.0:575): avc: denied { read } for name="twadbfifo" dev="tmpfs" ino=11486 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1
-11-02 18:05:50.810   269   269 I recovery: type=1400 audit(0.0:576): avc: denied { open } for path="/tmp/twadbfifo" dev="tmpfs" ino=11486 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1
-11-02 18:08:08.920   322   322 E ServiceManager: cannot become context manager (Device or resource busy)
-11-02 18:09:10.920   265   265 I hwservicemanage: type=1400 audit(0.0:577): avc: denied { read } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
-
-11-02 18:09:10.931   325   325 I gatekeeperd: Starting gatekeeperd...
-11-02 18:09:10.932   325   325 E cutils-trace: Error opening trace file: No such file or directory (2)
-11-02 18:09:10.937   325   325 I ServiceManagement: getService: Trying again for android.hardware.gatekeeper@1.0::IGatekeeper/default...
-11-02 18:09:11.938   325   325 W ServiceManagement: Waited one second for android.hardware.gatekeeper@1.0::IGatekeeper/default. Waiting another...
-11-02 18:09:54.955   325   325 I chatty  : uid=0(root) gatekeeperd identical 43 lines
-11-02 18:09:55.956   325   325 W ServiceManagement: Waited one second for android.hardware.gatekeeper@1.0::IGatekeeper/default. Waiting another...
-11-02 18:09:56.458   335   335 E cutils-trace: Error opening trace file: No such file or directory (2)
-11-02 18:09:56.458   335   335 D vndksupport: Loading /vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so from current namespace instead of sphal namespace.
-11-02 18:09:56.460   335   335 D vndksupport: Loading /vendor/lib/hw/gatekeeper.mt6761.so from current namespace instead of sphal namespace.
-11-02 18:09:56.466   335   335 I ServiceManagement: Removing namespace from process name android.hardware.gatekeeper@1.0-service to gatekeeper@1.0-service.
-11-02 18:09:56.467   335   335 I android.hardware.gatekeeper@1.0-service: Registration complete for android.hardware.gatekeeper@1.0::IGatekeeper/default.
-11-02 18:09:56.450   266   266 I servicemanager: type=1400 audit(0.0:578): avc: denied { search } for name="325" dev="proc" ino=7757 scontext=u:r:recovery:s0 tcontext=u:r:su:s0 tclass=dir permissive=1
-11-02 18:09:56.460   266   266 I servicemanager: type=1400 audit(0.0:582): avc: denied { read } for name="perms" dev="selinuxfs" ino=67112179 scontext=u:r:recovery:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir permissive=1
-11-02 18:10:35.258   339   339 E cutils-trace: Error opening trace file: No such file or directory (2)
-11-02 18:10:35.262   339   339 I ServiceManagement: getService: Trying again for android.hardware.keymaster@3.0::IKeymasterDevice/default...
-11-02 18:10:36.263   339   339 W ServiceManagement: Waited one second for android.hardware.keymaster@3.0::IKeymasterDevice/default. Waiting another...
-11-02 18:11:26.287   339   339 I chatty  : uid=0(root) keystore identical 50 lines
-11-02 18:11:27.288   339   339 W ServiceManagement: Waited one second for android.hardware.keymaster@3.0::IKeymasterDevice/default. Waiting another...
-11-02 18:11:27.536   346   346 E cutils-trace: Error opening trace file: No such file or directory (2)
-11-02 18:11:27.537   346   346 D vndksupport: Loading /vendor/lib/hw/android.hardware.keymaster@3.0-impl.so from current namespace instead of sphal namespace.
-11-02 18:11:27.544   346   346 I android.hardware.keymaster@3.0-impl: Fetching keymaster device name default
-11-02 18:11:27.545   346   346 D vndksupport: Loading /vendor/lib/hw/keystore.mt6761.so from current namespace instead of sphal namespace.
-11-02 18:11:28.288   339   339 W ServiceManagement: Waited one second for android.hardware.keymaster@3.0::IKeymasterDevice/default. Waiting another...
-11-02 18:12:49.324   339   339 I chatty  : uid=0(root) keystore identical 81 lines
-11-02 18:12:50.324   339   339 W ServiceManagement: Waited one second for 
-
-android.hardware.keymaster@3.0::IKeymasterDevice/default. Waiting another...
-11-02 18:12:50.742   346   346 I ServiceManagement: Removing namespace from process name android.hardware.keymaster@3.0-service to keymaster@3.0-service.
-11-02 18:12:50.744   346   346 I android.hardware.keymaster@3.0-service: Registration complete for android.hardware.keymaster@3.0::IKeymasterDevice/default.
-11-02 18:12:50.745   339   339 I keystore: found android.hardware.keymaster@3.0::IKeymasterDevice with interface name default and seclevel TRUSTED_ENVIRONMENT
-
-
-
-/* Comment... Above is Completed Successfully & a folder automatically created named "user-0" But 0mb error still here. Now Below is When i tap on Decrypt & Enter any password...*/
-
+11-11 14:27:16.800   302   302 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:16.800   302   302 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:16.800   302   302 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:16.800   302   302 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:16.802   302   302 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=302 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:16.804   302   302 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=302 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:16.805   302   302 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=302 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:16.810   302   302 I hwservicemanager: hwservicemanager is ready now.
 --------- beginning of crash
-11-02 18:25:04.375   380   380 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 380 (recovery), pid 380 (recovery)
-11-02 18:25:04.378   382   382 F libc    : exec failed: No such file or directory
-11-02 18:25:04.381   380   380 F libc    : crash_dump helper failed to exec
+11-11 14:27:16.811   302   302 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xaf3570c0)
+11-11 14:27:16.811   302   302 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 302 (hwservicemanage), pid 302 (hwservicemanage)
+11-11 14:27:16.812   312   312 F libc    : exec failed: No such file or directory
+11-11 14:27:16.813   302   302 F libc    : crash_dump helper failed to exec
+11-11 14:27:10.084   305   305 W auditd  : type=2000 audit(0.0:1): initialized
+11-11 14:27:11.280   305   305 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+11-11 14:27:11.280   305   305 W auditd  : type=1404 audit(0.0:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+11-11 14:27:11.370     1     1 W init    : type=1400 audit(0.0:4): avc: denied { relabelto } for name="boot" dev="tmpfs" ino=11449 scontext=u:r:init:s0 tcontext=u:object_r:boot_block_device:s0 tclass=lnk_file permissive=0
+11-11 14:27:11.370     1     1 W init    : type=1400 audit(0.0:5): avc: denied { mac_admin } for capability=33 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability2 permissive=0
+11-11 14:27:11.370   305   305 W auditd  : type=1401 audit(0.0:6): op=setxattr invalid_context="u:object_r:vbmeta_block_device:s0"
+11-11 14:27:11.370     1     1 W init    : type=1400 audit(0.0:7): avc: denied { mac_admin } for capability=33 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability2 permissive=0
+11-11 14:27:11.370   305   305 W auditd  : type=1401 audit(0.0:8): op=setxattr invalid_context="u:object_r:vendor_block_device:s0"
+11-11 14:27:11.380   251   251 W init    : type=1400 audit(0.0:9): avc: denied { read } for name="plat_file_contexts" dev="rootfs" ino=7506 scontext=u:r:vendor_init:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+11-11 14:27:16.780   305   305 I init    : type=1400 audit(0.0:731): avc: denied { entrypoint } for path="/sbin/logd" dev="rootfs" ino=10546 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+11-11 14:27:16.780   305   305 I logd    : type=1400 audit(0.0:732): avc: denied { read execute } for path="/sbin/logd" dev="rootfs" ino=10546 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+11-11 14:27:16.780   253   253 I ueventd : type=1400 audit(0.0:733): avc: denied { mac_admin } for capability=33 scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability2 permissive=1
+11-11 14:27:16.780   253   253 I ueventd : type=1400 audit(0.0:734): avc: denied { create } for name="mmcblk1" scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+11-11 14:27:16.780   253   253 I ueventd : type=1400 audit(0.0:735): avc: denied { setattr } for name="mmcblk1" dev="tmpfs" ino=1328 scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+11-11 14:27:16.780   305   305 I logd    : type=1400 audit(0.0:736): avc: denied { getattr } for path="/sbin/logd" dev="rootfs" ino=10546 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+11-11 14:27:16.780   305   305 I logd    : type=1400 audit(0.0:737): avc: denied { open } for path="/sbin/ld.config.txt" dev="rootfs" ino=10500 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+11-11 14:27:16.780   253   253 I ueventd : type=1400 audit(0.0:738): avc: denied { create } for name="mmcblk1p1" scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+11-11 14:27:16.780   253   253 I ueventd : type=1400 audit(0.0:739): avc: denied { setattr } for name="mmcblk1p1" dev="tmpfs" ino=1331 scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+11-11 14:27:16.790   302   302 I hwservicemanage: type=1400 audit(0.0:740): avc: denied { read } for name="perms" dev="selinuxfs" ino=67112181 scontext=u:r:recovery:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir permissive=1
+11-11 14:27:18.250   269   269 I recovery: type=1400 audit(0.0:743): avc: denied { getattr } for path="/data/data/com.android.printservice.recommendation" dev="mmcblk0p37" ino=11090 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c76,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:18.250   269   269 I recovery: type=1400 audit(0.0:744): avc: denied { read } for name="com.android.printservice.recommendation" dev="mmcblk0p37" ino=11090 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c76,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:18.250   269   269 I recovery: type=1400 audit(0.0:745): avc: denied { open } for path="/data/data/com.android.printservice.recommendation" dev="mmcblk0p37" ino=11090 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c76,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:18.810   269   269 I recovery: type=1400 audit(0.0:746): avc: denied { getattr } for path="/data/data/com.google.android.tts" dev="mmcblk0p37" ino=12737 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c65,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:18.810   269   269 I recovery: type=1400 audit(0.0:747): avc: denied { read } for name="com.google.android.tts" dev="mmcblk0p37" ino=12737 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c65,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:18.810   269   269 I recovery: type=1400 audit(0.0:748): avc: denied { open } for path="/data/data/com.google.android.tts" dev="mmcblk0p37" ino=12737 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c65,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:18.810   269   269 I recovery: type=1400 audit(0.0:749): avc: denied { getattr } for path="/data/data/com.google.android.tts/app_phenotype_file/com.google.android.tts#com.google.android.tts.pb" dev="mmcblk0p37" ino=52193 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c65,c256,c512,c768 tclass=file permissive=1
+11-11 14:27:18.830   269   269 I recovery: type=1400 audit(0.0:750): avc: denied { getattr } for path="/data/data/com.android.smspush" dev="mmcblk0p37" ino=12809 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c60,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:18.830   269   269 I recovery: type=1400 audit(0.0:751): avc: denied { read } for name="com.android.smspush" dev="mmcblk0p37" ino=12809 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c60,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:19.830   269   269 I recovery: type=1400 audit(0.0:842): avc: denied { getattr } for path="/data/data/com.google.android.contacts" dev="mmcblk0p37" ino=17447 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c131,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:19.830   269   269 I recovery: type=1400 audit(0.0:843): avc: denied { read } for name="com.google.android.contacts" dev="mmcblk0p37" ino=17447 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c131,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:19.830   269   269 I recovery: type=1400 audit(0.0:844): avc: denied { open } for path="/data/data/com.google.android.contacts" dev="mmcblk0p37" ino=17447 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c131,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:19.830   269   269 I recovery: type=1400 audit(0.0:845): avc: denied { getattr } for path="/data/data/com.google.android.contacts/shared_prefs/com.google.android.contacts.xml" dev="mmcblk0p37" ino=29817 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c131,c256,c512,c768 tclass=file permissive=1
+11-11 14:27:19.840   269   269 I recovery: type=1400 audit(0.0:846): avc: denied { getattr } for path="/data/data/com.whatsapp" dev="mmcblk0p37" ino=26692 scontext=u:r:recovery:s0 tcontext=u:object_r:app_data_file:s0:c129,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:21.050   269   269 I recovery: type=1400 audit(0.0:983): avc: denied { getattr } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=1331 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+11-11 14:27:21.050   269   269 I recovery: type=1400 audit(0.0:984): avc: denied { read } for name="mmcblk1p1" dev="tmpfs" ino=1331 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+11-11 14:27:21.050   269   269 I recovery: type=1400 audit(0.0:985): avc: denied { open } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=1331 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+11-11 14:27:21.050   269   269 I recovery: type=1400 audit(0.0:986): avc: denied { ioctl } for path="/dev/block/mmcblk1p1" dev="tmpfs" ino=1331 ioctlcmd=0x1272 scontext=u:r:recovery:s0 tcontext=u:object_r:unlabeled:s0 tclass=blk_file permissive=1
+11-11 14:27:21.560   269   269 I recovery: type=1400 audit(0.0:987): avc: denied { write } for name="fstab" dev="rootfs" ino=11660 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+11-11 14:27:21.802   331   331 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:21.802   331   331 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:21.802   331   331 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:21.803   331   331 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:21.805   331   331 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=331 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:21.807   331   331 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=331 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:21.808   331   331 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=331 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:21.808   331   331 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:27:21.809   331   331 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:27:21.810   331   331 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb39b20c0)
+11-11 14:27:21.810   331   331 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 331 (hwservicemanage), pid 331 (hwservicemanage)
+11-11 14:27:21.811   333   333 F libc    : exec failed: No such file or directory
+11-11 14:27:21.812   331   331 F libc    : crash_dump helper failed to exec
+11-11 14:27:22.120   269   269 I recovery: type=1400 audit(0.0:1001): avc: denied { getattr } for path="/plat_hwservice_contexts" dev="rootfs" ino=10784 scontext=u:r:recovery:s0 tcontext=u:object_r:hwservice_contexts_file:s0 tclass=file permissive=1
+11-11 14:27:22.120   269   269 I recovery: type=1400 audit(0.0:1002): avc: denied { getattr } for path="/vndservice_contexts" dev="rootfs" ino=10782 scontext=u:r:recovery:s0 tcontext=u:object_r:vndservice_contexts_file:s0 tclass=file permissive=1
+11-11 14:27:22.120   269   269 I recovery: type=1400 audit(0.0:1003): avc: denied { getattr } for path="/vendor_seapp_contexts" dev="rootfs" ino=10777 scontext=u:r:recovery:s0 tcontext=u:object_r:seapp_contexts_file:s0 tclass=file permissive=1
+11-11 14:27:22.120   269   269 I recovery: type=1400 audit(0.0:1004): avc: denied { getattr } for path="/sepolicy" dev="rootfs" ino=10752 scontext=u:r:recovery:s0 tcontext=u:object_r:sepolicy_file:s0 tclass=file permissive=1
+11-11 14:27:22.120   269   269 I recovery: type=1400 audit(0.0:1005): avc: denied { getattr } for path="/plat_service_contexts" dev="rootfs" ino=10404 scontext=u:r:recovery:s0 tcontext=u:object_r:service_contexts_file:s0 tclass=file permissive=1
+11-11 14:27:22.674   339   341 I adbd    : initializing functionfs
+11-11 14:27:22.674   339   341 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+11-11 14:27:22.675   339   341 I adbd    : functionfs successfully initialized
+11-11 14:27:22.675   339   341 I adbd    : registering usb transport
+11-11 14:27:22.675   339   342 E cutils-trace: Error opening trace file: No such file or directory (2)
+11-11 14:27:23.460   340   340 I recovery: type=1400 audit(0.0:1094): avc: denied { write } for name="mtp_usb" dev="tmpfs" ino=14417 scontext=u:r:recovery:s0 tcontext=u:object_r:mtp_device:s0 tclass=chr_file permissive=1
+11-11 14:27:23.460   340   340 I recovery: type=1400 audit(0.0:1095): avc: denied { open } for path="/dev/mtp_usb" dev="tmpfs" ino=14417 scontext=u:r:recovery:s0 tcontext=u:object_r:mtp_device:s0 tclass=chr_file permissive=1
+11-11 14:27:23.460   340   340 I recovery: type=1400 audit(0.0:1096): avc: denied { read } for name="mtp_usb" dev="tmpfs" ino=14417 scontext=u:r:recovery:s0 tcontext=u:object_r:mtp_device:s0 tclass=chr_file permissive=1
+11-11 14:27:24.410   340   340 I recovery: type=1400 audit(0.0:1097): avc: denied { read } for name="Android" dev="mmcblk0p37" ino=20855 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c512,c768 tclass=dir permissive=1
+11-11 14:27:24.410   340   340 I recovery: type=1400 audit(0.0:1098): avc: denied { open } for path="/data/media/0/Android" dev="mmcblk0p37" ino=20855 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c512,c768 tclass=dir permissive=1
+11-11 14:27:24.470   340   340 I recovery: type=1400 audit(0.0:1111): avc: denied { getattr } for path="/data/media/0/ccmini/20211107_221141.log" dev="mmcblk0p37" ino=28773 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c135,c256,c512,c768 tclass=file permissive=1
+11-11 14:27:24.480   340   340 I recovery: type=1400 audit(0.0:1112): avc: denied { read } for name="Subtitles" dev="mmcblk0p37" ino=28167 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c119,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:24.480   340   340 I recovery: type=1400 audit(0.0:1113): avc: denied { open } for path="/data/media/0/Subtitles" dev="mmcblk0p37" ino=28167 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c119,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:24.490   340   340 I recovery: type=1400 audit(0.0:1114): avc: denied { read } for name="KineMaster" dev="mmcblk0p37" ino=53701 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c138,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:24.490   340   340 I recovery: type=1400 audit(0.0:1115): avc: denied { open } for path="/data/media/0/KineMaster" dev="mmcblk0p37" ino=53701 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c138,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:25.750   340   340 I recovery: type=1400 audit(0.0:1129): avc: denied { getattr } for path="/data/media/0/Android/data/com.google.android.apps.maps/testdata" dev="mmcblk0p37" ino=21038 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c81,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:25.770   340   340 I recovery: type=1400 audit(0.0:1130): avc: denied { getattr } for path="/data/media/0/Android/data/com.vanced.android.youtube/cache" dev="mmcblk0p37" ino=22309 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c118,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:25.800   340   340 I recovery: type=1400 audit(0.0:1131): avc: denied { read } for name="com.google.android.apps.messaging" dev="mmcblk0p37" ino=28002 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c95,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:25.800   340   340 I recovery: type=1400 audit(0.0:1132): avc: denied { open } for path="/data/media/0/Android/data/com.google.android.apps.messaging" dev="mmcblk0p37" ino=28002 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c95,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:25.800   340   340 I recovery: type=1400 audit(0.0:1133): avc: denied { read } for name="pl.solidexplorer2" dev="mmcblk0p37" ino=30233 scontext=u:r:recovery:s0 tcontext=u:object_r:media_rw_data_file:s0:c116,c256,c512,c768 tclass=dir permissive=1
+11-11 14:27:26.805   355   355 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:26.805   355   355 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:26.805   355   355 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:26.805   355   355 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:26.807   355   355 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=355 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:26.809   355   355 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=355 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:26.809   355   355 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=355 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:26.809   355   355 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:27:26.809   355   355 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:27:26.810   355   355 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xadf750c0)
+11-11 14:27:26.811   355   355 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 355 (hwservicemanage), pid 355 (hwservicemanage)
+11-11 14:27:26.812   357   357 F libc    : exec failed: No such file or directory
+11-11 14:27:26.812   355   355 F libc    : crash_dump helper failed to exec
+11-11 14:27:26.812   339   343 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:27:26.813   339   343 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:27:26.813   339   339 I adbd    : closing functionfs transport
+11-11 14:27:26.994   339   341 I adbd    : initializing functionfs
+11-11 14:27:26.994   339   341 I adbd    : functionfs successfully initialized
+11-11 14:27:26.994   339   341 I adbd    : registering usb transport
+11-11 14:27:31.810   361   361 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:31.810   361   361 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:31.810   361   361 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:31.810   361   361 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:31.812   361   361 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=361 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:31.814   361   361 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=361 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:31.814   361   361 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=361 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:31.814   361   361 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:27:31.815   361   361 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:27:31.816   361   361 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb05ac0c0)
+11-11 14:27:31.816   361   361 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 361 (hwservicemanage), pid 361 (hwservicemanage)
+11-11 14:27:31.817   363   363 F libc    : exec failed: No such file or directory
+11-11 14:27:31.818   361   361 F libc    : crash_dump helper failed to exec
+11-11 14:27:31.818   339   359 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:27:31.818   339   359 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:27:31.818   339   339 I adbd    : closing functionfs transport
+11-11 14:27:31.985   339   341 I adbd    : initializing functionfs
+11-11 14:27:31.985   339   341 I adbd    : functionfs successfully initialized
+11-11 14:27:31.985   339   341 I adbd    : registering usb transport
+11-11 14:27:36.837   366   366 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:36.837   366   366 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:36.837   366   366 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:36.837   366   366 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:36.839   366   366 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=366 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:36.841   366   366 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=366 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:36.841   366   366 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=366 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:36.841   366   366 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:27:36.841   366   366 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:27:36.842   366   366 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xaf36e0c0)
+11-11 14:27:36.843   366   366 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 366 (hwservicemanage), pid 366 (hwservicemanage)
+11-11 14:27:36.844   368   368 F libc    : exec failed: No such file or directory
+11-11 14:27:36.845   339   365 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:27:36.845   366   366 F libc    : crash_dump helper failed to exec
+11-11 14:27:36.845   339   365 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:27:36.845   339   339 I adbd    : closing functionfs transport
+11-11 14:27:37.065   339   341 I adbd    : initializing functionfs
+11-11 14:27:37.065   339   341 I adbd    : functionfs successfully initialized
+11-11 14:27:37.065   339   341 I adbd    : registering usb transport
+11-11 14:27:41.823   371   371 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:41.824   371   371 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:41.824   371   371 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:41.824   371   371 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:41.826   371   371 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=371 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:41.827   371   371 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=371 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:41.828   371   371 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=371 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:41.828   371   371 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:27:41.829   370   370 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:27:41.829   370   370 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:27:41.830   339   339 I adbd    : closing functionfs transport
+11-11 14:27:41.830   371   371 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:27:41.831   371   371 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb48a00c0)
+11-11 14:27:41.831   371   371 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 371 (hwservicemanage), pid 371 (hwservicemanage)
+11-11 14:27:41.832   373   373 F libc    : exec failed: No such file or directory
+11-11 14:27:41.832   371   371 F libc    : crash_dump helper failed to exec
+11-11 14:27:42.005   339   341 I adbd    : initializing functionfs
+11-11 14:27:42.005   339   341 I adbd    : functionfs successfully initialized
+11-11 14:27:42.005   339   341 I adbd    : registering usb transport
+11-11 14:27:46.835   376   376 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:46.835   376   376 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:46.835   376   376 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:46.835   376   376 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:46.837   376   376 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=376 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:46.839   376   376 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=376 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:46.839   376   376 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=376 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:46.840   376   376 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:27:46.842   376   376 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:27:46.843   339   375 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:27:46.843   339   375 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:27:46.843   339   339 I adbd    : closing functionfs transport
+11-11 14:27:46.843   376   376 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb160f0c0)
+11-11 14:27:46.844   376   376 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 376 (hwservicemanage), pid 376 (hwservicemanage)
+11-11 14:27:46.845   378   378 F libc    : exec failed: No such file or directory
+11-11 14:27:46.845   376   376 F libc    : crash_dump helper failed to exec
+11-11 14:27:47.004   339   341 I adbd    : initializing functionfs
+11-11 14:27:47.005   339   341 I adbd    : functionfs successfully initialized
+11-11 14:27:47.005   339   341 I adbd    : registering usb transport
+11-11 14:27:51.837   381   381 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:51.837   381   381 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:51.837   381   381 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:51.837   381   381 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:51.839   381   381 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=381 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:51.841   381   381 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=381 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:51.841   381   381 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=381 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:51.841   381   381 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:27:51.842   381   381 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:27:51.843   381   381 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xa71d30c0)
+11-11 14:27:51.843   381   381 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 381 (hwservicemanage), pid 381 (hwservicemanage)
+11-11 14:27:51.844   383   383 F libc    : exec failed: No such file or directory
+11-11 14:27:51.845   381   381 F libc    : crash_dump helper failed to exec
+11-11 14:27:51.845   380   380 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:27:51.845   380   380 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:27:51.845   339   339 I adbd    : closing functionfs transport
+11-11 14:27:52.005   339   341 I adbd    : initializing functionfs
+11-11 14:27:52.005   339   341 I adbd    : functionfs successfully initialized
+11-11 14:27:52.005   339   341 I adbd    : registering usb transport
+11-11 14:27:56.843   386   386 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:27:56.843   386   386 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:56.843   386   386 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:27:56.843   386   386 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:27:56.846   386   386 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=386 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:56.847   386   386 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=386 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:56.848   386   386 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=386 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:27:56.848   386   386 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:27:56.851   386   386 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:27:56.851   339   385 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:27:56.851   339   385 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:27:56.851   339   339 I adbd    : closing functionfs transport
+11-11 14:27:56.852   386   386 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb325c0c0)
+11-11 14:27:56.852   386   386 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 386 (hwservicemanage), pid 386 (hwservicemanage)
+11-11 14:27:56.853   388   388 F libc    : exec failed: No such file or directory
+11-11 14:27:56.853   386   386 F libc    : crash_dump helper failed to exec
+11-11 14:27:57.024   339   341 I adbd    : initializing functionfs
+11-11 14:27:57.025   339   341 I adbd    : functionfs successfully initialized
+11-11 14:27:57.025   339   341 I adbd    : registering usb transport
+11-11 14:28:01.850   391   391 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:28:01.850   391   391 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:01.850   391   391 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:28:01.850   391   391 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:01.852   391   391 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=391 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:01.854   391   391 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=391 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:01.855   391   391 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=391 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:01.855   391   391 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:28:01.858   391   391 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:28:01.858   339   390 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:28:01.858   339   390 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:28:01.858   339   339 I adbd    : closing functionfs transport
+11-11 14:28:01.859   391   391 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xa7cf70c0)
+11-11 14:28:01.859   391   391 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 391 (hwservicemanage), pid 391 (hwservicemanage)
+11-11 14:28:01.860   393   393 F libc    : exec failed: No such file or directory
+11-11 14:28:01.860   391   391 F libc    : crash_dump helper failed to exec
+11-11 14:28:02.024   339   341 I adbd    : initializing functionfs
+11-11 14:28:02.025   339   341 I adbd    : functionfs successfully initialized
+11-11 14:28:02.025   339   341 I adbd    : registering usb transport
+11-11 14:28:06.856   396   396 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:28:06.856   396   396 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:06.856   396   396 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:28:06.856   396   396 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:06.858   396   396 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=396 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:06.860   396   396 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=396 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:06.860   396   396 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=396 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:06.860   396   396 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:28:06.863   396   396 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:28:06.863   339   395 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:28:06.863   339   395 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:28:06.863   339   339 I adbd    : closing functionfs transport
+11-11 14:28:06.864   396   396 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xa977e0c0)
+11-11 14:28:06.864   396   396 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 396 (hwservicemanage), pid 396 (hwservicemanage)
+11-11 14:28:06.865   398   398 F libc    : exec failed: No such file or directory
+11-11 14:28:06.866   396   396 F libc    : crash_dump helper failed to exec
+11-11 14:28:07.064   339   341 I adbd    : initializing functionfs
+11-11 14:28:07.065   339   341 I adbd    : functionfs successfully initialized
+11-11 14:28:07.065   339   341 I adbd    : registering usb transport
+11-11 14:28:11.860   403   403 I hwservicemanage: type=1400 audit(0.0:1139): avc: denied { create } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+11-11 14:28:11.860   403   403 I hwservicemanage: type=1400 audit(0.0:1140): avc: denied { bind } for scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1
+11-11 14:28:11.864   403   403 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:28:11.864   403   403 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:11.864   403   403 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:28:11.864   403   403 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:11.866   403   403 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=403 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:11.868   403   403 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=403 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:11.868   403   403 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=403 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:11.868   403   403 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:28:11.869   403   403 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:28:11.870   403   403 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb5f2a0c0)
+11-11 14:28:11.870   403   403 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 403 (hwservicemanage), pid 403 (hwservicemanage)
+11-11 14:28:11.871   405   405 F libc    : exec failed: No such file or directory
+11-11 14:28:11.872   403   403 F libc    : crash_dump helper failed to exec
+11-11 14:28:11.872   400   400 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:28:11.872   400   400 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:28:11.872   339   339 I adbd    : closing functionfs transport
+11-11 14:28:12.015   339   341 I adbd    : initializing functionfs
+11-11 14:28:12.015   339   341 I adbd    : functionfs successfully initialized
+11-11 14:28:12.015   339   341 I adbd    : registering usb transport
+11-11 14:28:16.867   408   408 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:28:16.867   408   408 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:16.867   408   408 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:28:16.867   408   408 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:16.869   408   408 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=408 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:16.871   408   408 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=408 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:16.871   408   408 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=408 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:16.871   408   408 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:28:16.874   408   408 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:28:16.874   407   407 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:28:16.874   407   407 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:28:16.875   339   339 I adbd    : closing functionfs transport
+11-11 14:28:16.875   408   408 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb36ab0c0)
+11-11 14:28:16.875   408   408 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 408 (hwservicemanage), pid 408 (hwservicemanage)
+11-11 14:28:16.876   410   410 F libc    : exec failed: No such file or directory
+11-11 14:28:16.877   408   408 F libc    : crash_dump helper failed to exec
+11-11 14:28:17.074   339   341 I adbd    : initializing functionfs
+11-11 14:28:17.075   339   341 I adbd    : functionfs successfully initialized
+11-11 14:28:17.075   339   341 I adbd    : registering usb transport
+11-11 14:28:21.887   413   413 E hw-ProcessState: Binder driver protocol(8) does not match user space protocol(7)!
+11-11 14:28:21.887   413   413 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:21.887   413   413 E hw-ProcessState: Binder driver could not be opened.  Terminating.
+11-11 14:28:21.887   413   413 E hw-ProcessState: Binder ioctl to set max threads failed: Bad file descriptor
+11-11 14:28:21.890   413   413 E SELinux : avc:  denied  { add } for interface=android.hidl.manager::IServiceManager sid=u:r:recovery:s0 pid=413 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_manager_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:21.891   413   413 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:recovery:s0 pid=413 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:21.891   413   413 E SELinux : avc:  denied  { add } for interface=android.hidl.token::ITokenManager sid=u:r:recovery:s0 pid=413 scontext=u:r:recovery:s0 tcontext=u:object_r:hidl_token_hwservice:s0 tclass=hwservice_manager permissive=1
+11-11 14:28:21.892   413   413 E hw-ProcessState: Binder ioctl to become context manager failed: Bad file descriptor
+11-11 14:28:21.895   413   413 I hwservicemanager: hwservicemanager is ready now.
+11-11 14:28:21.895   412   412 E adbd    : aio: got error event on read total bufs 1: Cannot send after transport endpoint shutdown
+11-11 14:28:21.895   412   412 E adbd    : remote usb: read terminated (message): Cannot send after transport endpoint shutdown
+11-11 14:28:21.895   339   339 I adbd    : closing functionfs transport
+11-11 14:28:21.896   413   413 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xb61200c0)
+11-11 14:28:21.896   413   413 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 413 (hwservicemanage), pid 413 (hwservicemanage)
+11-11 14:28:21.897   415   415 F libc    : exec failed: No such file or directory
+11-11 14:28:21.897   413   413 F libc    : crash_dump helper failed to exec
+11-11 14:28:22.055   339   341 I adbd    : initializing functionfs
+11-11 14:28:22.055   339   341 I adbd    : functionfs successfully initialized
+11-11 14:28:22.055   339   341 I adbd    : registering usb transport
+11-11 14:28:37.621   422   422 E ServiceManager: cannot become context manager (Device or resource busy)
