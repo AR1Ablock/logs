@@ -1,0 +1,841 @@
+Run chmod +x build.sh
++ source of.env
+++ export DEVICE=Nova
+++ DEVICE=Nova
+++ export ANDROID_ROOT=/home/runner/work/twrp
+++ ANDROID_ROOT=/home/runner/work/twrp
+++ export PATH=/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/bin/
+++ PATH=/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/bin/
++ rm /bin/python
+rm: cannot remove '/bin/python': No such file or directory
++ ln -s /bin/python2 /bin/python
+ln: failed to create symbolic link '/bin/python': Permission denied
++ cd /home/runner/work/twrp
++ source build/envsetup.sh
+++ VARIANT_CHOICES=(user userdebug eng)
+++ unset LUNCH_MENU_CHOICES
+++ add_lunch_combo aosp_arm-eng
+++ local new_combo=aosp_arm-eng
+++ local c
+++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
+++ add_lunch_combo aosp_arm64-eng
+++ local new_combo=aosp_arm64-eng
+++ local c
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_arm64-eng = aosp_arm-eng ']'
+++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
+++ add_lunch_combo aosp_mips-eng
+++ local new_combo=aosp_mips-eng
+++ local c
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_mips-eng = aosp_arm-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_mips-eng = aosp_arm64-eng ']'
+++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
+++ add_lunch_combo aosp_mips64-eng
+++ local new_combo=aosp_mips64-eng
+++ local c
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_mips64-eng = aosp_arm-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_mips64-eng = aosp_arm64-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_mips64-eng = aosp_mips-eng ']'
+++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
+++ add_lunch_combo aosp_x86-eng
+++ local new_combo=aosp_x86-eng
+++ local c
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86-eng = aosp_arm-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86-eng = aosp_arm64-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86-eng = aosp_mips-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86-eng = aosp_mips64-eng ']'
+++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
+++ add_lunch_combo aosp_x86_64-eng
+++ local new_combo=aosp_x86_64-eng
+++ local c
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86_64-eng = aosp_arm-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86_64-eng = aosp_arm64-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86_64-eng = aosp_mips-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86_64-eng = aosp_mips64-eng ']'
+++ for c in ${LUNCH_MENU_CHOICES[@]}
+++ '[' aosp_x86_64-eng = aosp_x86-eng ']'
+++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
+++ complete -F _lunch lunch
+++ case `uname -s` in
++++ uname -s
+++ case `uname -s` in
++++ uname -s
+++ '[' x/bin/bash '!=' x/bin/bash ']'
++++ test -d device
++++ find -L device -maxdepth 4 -name vendorsetup.sh
++++ sort
++++ test -d vendor
++++ sort
++++ find -L vendor -maxdepth 4 -name vendorsetup.sh
++++ test -d product
+++ for f in `test -d device && find -L device -maxdepth 4 -name 'vendorsetup.sh' 2> /dev/null | sort` `test -d vendor && find -L vendor -maxdepth 4 -name 'vendorsetup.sh' 2> /dev/null | sort` `test -d product && find -L product -maxdepth 4 -name 'vendorsetup.sh' 2> /dev/null | sort`
+including device/infinix/Nova/vendorsetup.sh
+++ echo 'including device/infinix/Nova/vendorsetup.sh'
+++ . device/infinix/Nova/vendorsetup.sh
++++ add_lunch_combo omni_Nova-user
+including vendor/omni/vendorsetup.sh
++++ local new_combo=omni_Nova-user
++++ local c
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-user = aosp_arm-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-user = aosp_arm64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-user = aosp_mips-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-user = aosp_mips64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-user = aosp_x86-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-user = aosp_x86_64-eng ']'
++++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
++++ add_lunch_combo omni_Nova-userdebug
++++ local new_combo=omni_Nova-userdebug
++++ local c
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-userdebug = aosp_arm-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-userdebug = aosp_arm64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-userdebug = aosp_mips-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-userdebug = aosp_mips64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-userdebug = aosp_x86-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-userdebug = aosp_x86_64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-userdebug = omni_Nova-user ']'
++++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
++++ add_lunch_combo omni_Nova-eng
++++ local new_combo=omni_Nova-eng
++++ local c
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-eng = aosp_arm-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-eng = aosp_arm64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-eng = aosp_mips-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-eng = aosp_mips64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-eng = aosp_x86-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-eng = aosp_x86_64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-eng = omni_Nova-user ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_Nova-eng = omni_Nova-userdebug ']'
++++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
+++ for f in `test -d device && find -L device -maxdepth 4 -name 'vendorsetup.sh' 2> /dev/null | sort` `test -d vendor && find -L vendor -maxdepth 4 -name 'vendorsetup.sh' 2> /dev/null | sort` `test -d product && find -L product -maxdepth 4 -name 'vendorsetup.sh' 2> /dev/null | sort`
+++ echo 'including vendor/omni/vendorsetup.sh'
+++ . vendor/omni/vendorsetup.sh
++++ add_lunch_combo omni_emulator-userdebug
++++ local new_combo=omni_emulator-userdebug
++++ local c
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = aosp_arm-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = aosp_arm64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = aosp_mips-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = aosp_mips64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = aosp_x86-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = aosp_x86_64-eng ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = omni_Nova-user ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = omni_Nova-userdebug ']'
++++ for c in ${LUNCH_MENU_CHOICES[@]}
++++ '[' omni_emulator-userdebug = omni_Nova-eng ']'
++++ LUNCH_MENU_CHOICES=(${LUNCH_MENU_CHOICES[@]} $new_combo)
+++ unset f
+++ addcompletions
+++ local T dir f
+++ '[' -z '4.4.20(1)-release' ']'
+++ '[' 4 -lt 3 ']'
+++ dir=sdk/bash_completion
+++ '[' -d sdk/bash_completion ']'
++++ /bin/ls sdk/bash_completion/adb.bash
+++ for f in `/bin/ls ${dir}/[a-z]*.bash 2> /dev/null`
+++ echo 'including sdk/bash_completion/adb.bash'
+++ . sdk/bash_completion/adb.bash
+including sdk/bash_completion/adb.bash
+++++ type -t compopt
++++ [[ builtin = \b\u\i\l\t\i\n ]]
++++ complete -F _adb adb
+++ complete -C 'bit --tab' bit
++++ gettop
++++ local TOPFILE=build/make/core/envsetup.mk
++++ '[' -n '' -a -f /build/make/core/envsetup.mk ']'
++++ '[' -f build/make/core/envsetup.mk ']'
++++ PWD=
++++ /bin/pwd
+++ export ANDROID_BUILD_TOP=/home/runner/work/twrp
+++ ANDROID_BUILD_TOP=/home/runner/work/twrp
+++ . /home/runner/work/twrp/vendor/omni/build/envsetup.sh
++++ alias bib=breakfast
+++++ gettop
+++++ local TOPFILE=build/make/core/envsetup.mk
+++++ '[' -n '' -a -f /build/make/core/envsetup.mk ']'
+++++ '[' -f build/make/core/envsetup.mk ']'
+++++ PWD=
+++++ /bin/pwd
++++ '[' -d /home/runner/work/twrp/vendor/qcom/sdclang ']'
++ export ALLOW_MISSING_DEPENDENCIES=true
++ ALLOW_MISSING_DEPENDENCIES=true
++ export LC_ALL=C
++ LC_ALL=C
++ lunch omni_Nova-eng
++ local answer
++ '[' omni_Nova-eng ']'
++ answer=omni_Nova-eng
++ local selection=
++ '[' -z omni_Nova-eng ']'
++ echo -n omni_Nova-eng
++ grep -q -e '^[0-9][0-9]*$'
++ selection=omni_Nova-eng
++ export TARGET_BUILD_APPS=
++ TARGET_BUILD_APPS=
++ local product variant_and_version variant version
++ product=omni_Nova
++ variant_and_version=eng
++ '[' eng '!=' omni_Nova-eng ']'
++ variant=eng
++ '[' eng '!=' eng ']'
++ '[' -z omni_Nova ']'
++ TARGET_PRODUCT=omni_Nova
++ TARGET_BUILD_VARIANT=eng
++ TARGET_PLATFORM_VERSION=
++ build_build_var_cache
+++ gettop
+++ local TOPFILE=build/make/core/envsetup.mk
+++ '[' -n '' -a -f /build/make/core/envsetup.mk ']'
+++ '[' -f build/make/core/envsetup.mk ']'
+++ PWD=
+++ /bin/pwd
++ local T=/home/runner/work/twrp
+++ cat /home/runner/work/twrp/build/envsetup.sh /home/runner/work/twrp/vendor/omni/build/envsetup.sh
+++ sort -u
+++ awk '{for(i=1;i<=NF;i++) if($i~/get_build_var/) print $(i+1)}'
+++ tr '()' '  '
+++ tr '\n' ' '
++ cached_vars=' 2ND_TARGET_GCC_VERSION ANDROID_BUILD_PATHS OUT_DIR TARGET_ARCH TARGET_DEVICE TARGET_GCC_VERSION TARGET_PLATFORM_VERSION print report_config '
+++ cat /home/runner/work/twrp/build/envsetup.sh /home/runner/work/twrp/vendor/omni/build/envsetup.sh
+++ sort -u
+++ tr '\n' ' '
+++ awk '{for(i=1;i<=NF;i++) if($i~/get_abs_build_var/) print $(i+1)}'
+++ tr '()' '  '
++ cached_abs_vars=' ANDROID_GCC_PREBUILTS ANDROID_JAVA_HOME ANDROID_JAVA_TOOLCHAIN ANDROID_PREBUILTS HOST_OUT HOST_OUT_TESTCASES PRODUCT_OUT TARGET_OUT_TESTCASES print '
+++ builtin cd /home/runner/work/twrp
+++ build/soong/soong_ui.bash --dumpvars-mode '--vars= 2ND_TARGET_GCC_VERSION ANDROID_BUILD_PATHS OUT_DIR TARGET_ARCH TARGET_DEVICE TARGET_GCC_VERSION TARGET_PLATFORM_VERSION print report_config ' '--abs-vars= ANDROID_GCC_PREBUILTS ANDROID_JAVA_HOME ANDROID_JAVA_TOOLCHAIN ANDROID_PREBUILTS HOST_OUT HOST_OUT_TESTCASES PRODUCT_OUT TARGET_OUT_TESTCASES print ' --var-prefix=var_cache_ --abs-var-prefix=abs_var_cache_
++ build_dicts_script='var_cache_2ND_TARGET_GCC_VERSION='\'''\''
+var_cache_ANDROID_BUILD_PATHS='\''/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin'\''
+var_cache_OUT_DIR='\''/home/runner/work/twrp/out'\''
+var_cache_TARGET_ARCH='\''arm'\''
+var_cache_TARGET_DEVICE='\''Nova'\''
+var_cache_TARGET_GCC_VERSION='\''4.9'\''
+var_cache_TARGET_PLATFORM_VERSION='\''PPR1'\''
+var_cache_print='\'''\''
+var_cache_report_config='\''============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=16.1.0
+TARGET_PRODUCT=omni_Nova
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-1064-azure-x86_64-Ubuntu-18.04.6-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3B.190801.002
+OUT_DIR=/home/runner/work/twrp/out
+============================================'\''
+abs_var_cache_ANDROID_GCC_PREBUILTS='\''/home/runner/work/twrp/prebuilts/gcc/linux-x86'\''
+abs_var_cache_ANDROID_JAVA_HOME='\''/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86'\''
+abs_var_cache_ANDROID_JAVA_TOOLCHAIN='\''/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin'\''
+abs_var_cache_ANDROID_PREBUILTS='\''/home/runner/work/twrp/prebuilt/linux-x86'\''
+abs_var_cache_HOST_OUT='\''/home/runner/work/twrp/out/host/linux-x86'\''
+abs_var_cache_HOST_OUT_TESTCASES='\''/home/runner/work/twrp/out/host/linux-x86/testcases'\''
+abs_var_cache_PRODUCT_OUT='\''/home/runner/work/twrp/out/target/product/Nova'\''
+abs_var_cache_TARGET_OUT_TESTCASES='\''/home/runner/work/twrp/out/target/product/Nova/testcases'\''
+abs_var_cache_print='\'''\'''
++ local ret=0
++ '[' 0 -ne 0 ']'
++ eval 'var_cache_2ND_TARGET_GCC_VERSION='\'''\''
+var_cache_ANDROID_BUILD_PATHS='\''/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin'\''
+var_cache_OUT_DIR='\''/home/runner/work/twrp/out'\''
+var_cache_TARGET_ARCH='\''arm'\''
+var_cache_TARGET_DEVICE='\''Nova'\''
+var_cache_TARGET_GCC_VERSION='\''4.9'\''
+var_cache_TARGET_PLATFORM_VERSION='\''PPR1'\''
+var_cache_print='\'''\''
+var_cache_report_config='\''============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=16.1.0
+TARGET_PRODUCT=omni_Nova
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-1064-azure-x86_64-Ubuntu-18.04.6-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3B.190801.002
+OUT_DIR=/home/runner/work/twrp/out
+============================================'\''
+abs_var_cache_ANDROID_GCC_PREBUILTS='\''/home/runner/work/twrp/prebuilts/gcc/linux-x86'\''
+abs_var_cache_ANDROID_JAVA_HOME='\''/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86'\''
+abs_var_cache_ANDROID_JAVA_TOOLCHAIN='\''/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin'\''
+abs_var_cache_ANDROID_PREBUILTS='\''/home/runner/work/twrp/prebuilt/linux-x86'\''
+abs_var_cache_HOST_OUT='\''/home/runner/work/twrp/out/host/linux-x86'\''
+abs_var_cache_HOST_OUT_TESTCASES='\''/home/runner/work/twrp/out/host/linux-x86/testcases'\''
+abs_var_cache_PRODUCT_OUT='\''/home/runner/work/twrp/out/target/product/Nova'\''
+abs_var_cache_TARGET_OUT_TESTCASES='\''/home/runner/work/twrp/out/target/product/Nova/testcases'\''
+abs_var_cache_print='\'''\'''
+++ var_cache_2ND_TARGET_GCC_VERSION=
+++ var_cache_ANDROID_BUILD_PATHS=/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin
+++ var_cache_OUT_DIR=/home/runner/work/twrp/out
+++ var_cache_TARGET_ARCH=arm
+++ var_cache_TARGET_DEVICE=Nova
+++ var_cache_TARGET_GCC_VERSION=4.9
+++ var_cache_TARGET_PLATFORM_VERSION=PPR1
+++ var_cache_print=
+++ var_cache_report_config='============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=16.1.0
+TARGET_PRODUCT=omni_Nova
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-1064-azure-x86_64-Ubuntu-18.04.6-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3B.190801.002
+OUT_DIR=/home/runner/work/twrp/out
+============================================'
+++ abs_var_cache_ANDROID_GCC_PREBUILTS=/home/runner/work/twrp/prebuilts/gcc/linux-x86
+++ abs_var_cache_ANDROID_JAVA_HOME=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86
+++ abs_var_cache_ANDROID_JAVA_TOOLCHAIN=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin
+++ abs_var_cache_ANDROID_PREBUILTS=/home/runner/work/twrp/prebuilt/linux-x86
+++ abs_var_cache_HOST_OUT=/home/runner/work/twrp/out/host/linux-x86
+++ abs_var_cache_HOST_OUT_TESTCASES=/home/runner/work/twrp/out/host/linux-x86/testcases
+++ abs_var_cache_PRODUCT_OUT=/home/runner/work/twrp/out/target/product/Nova
+++ abs_var_cache_TARGET_OUT_TESTCASES=/home/runner/work/twrp/out/target/product/Nova/testcases
+++ abs_var_cache_print=
++ ret=0
++ unset build_dicts_script
++ '[' 0 -ne 0 ']'
++ BUILD_VAR_CACHE_READY=true
++ '[' 0 -ne 0 ']'
+++ gettop
+++ local TOPFILE=build/make/core/envsetup.mk
+++ '[' -n '' -a -f /build/make/core/envsetup.mk ']'
+++ '[' -f build/make/core/envsetup.mk ']'
+++ PWD=
+++ /bin/pwd
++ T=/home/runner/work/twrp
++ pushd /home/runner/work/twrp
++ vendor/omni/build/tools/roomservice.py omni_Nova true
+WARNING: device/infinix/Nova/omni.dependencies file not found
++ popd
++ '[' 0 -ne 0 ']'
++ '[' -z omni_Nova -o -z eng ']'
++ echo -n omni_Nova
++ grep -q -e '^omni_'
+++ echo -n omni_Nova
+++ sed -e 's/^omni_//g'
++ CUSTOM_BUILD=Nova
++ export CUSTOM_BUILD
++ export TARGET_PRODUCT=omni_Nova
++ TARGET_PRODUCT=omni_Nova
++ export TARGET_BUILD_VARIANT=eng
++ TARGET_BUILD_VARIANT=eng
+++ get_build_var TARGET_PLATFORM_VERSION
+++ '[' true = true ']'
+++ eval 'echo "${var_cache_TARGET_PLATFORM_VERSION}"'
++++ echo PPR1
+++ return
++ export TARGET_PLATFORM_VERSION=PPR1
++ TARGET_PLATFORM_VERSION=PPR1
++ export TARGET_BUILD_TYPE=release
++ TARGET_BUILD_TYPE=release
+
++ echo
++ fixup_common_out_dir
+++ get_build_var OUT_DIR
+++ '[' true = true ']'
+++ eval 'echo "${var_cache_OUT_DIR}"'
++++ echo /home/runner/work/twrp/out
+++ return
++ common_out_dir=/home/runner/work/twrp/out/target/common
+++ get_build_var TARGET_DEVICE
+++ '[' true = true ']'
+++ eval 'echo "${var_cache_TARGET_DEVICE}"'
++++ echo Nova
+++ return
++ target_device=Nova
++ '[' '!' -z ']'
++ '[' -L /home/runner/work/twrp/out/target/common ']'
++ mkdir -p /home/runner/work/twrp/out/target/common
++ set_stuff_for_environment
++ settitle
++ '[' '' = true ']'
++ setpaths
+++ gettop
+++ local TOPFILE=build/make/core/envsetup.mk
+++ '[' -n '' -a -f /build/make/core/envsetup.mk ']'
+++ '[' -f build/make/core/envsetup.mk ']'
+++ PWD=
+++ /bin/pwd
++ local T=/home/runner/work/twrp
++ '[' '!' /home/runner/work/twrp ']'
++ '[' -n '' ']'
++ '[' -n '' ']'
+++ getprebuilt
+++ get_abs_build_var ANDROID_PREBUILTS
+++ '[' true = true ']'
+++ eval 'echo "${abs_var_cache_ANDROID_PREBUILTS}"'
++++ echo /home/runner/work/twrp/prebuilt/linux-x86
+++ return
++ local prebuiltdir=/home/runner/work/twrp/prebuilt/linux-x86
+++ get_abs_build_var ANDROID_GCC_PREBUILTS
+++ '[' true = true ']'
+++ eval 'echo "${abs_var_cache_ANDROID_GCC_PREBUILTS}"'
++++ echo /home/runner/work/twrp/prebuilts/gcc/linux-x86
+++ return
++ local gccprebuiltdir=/home/runner/work/twrp/prebuilts/gcc/linux-x86
+++ get_build_var TARGET_GCC_VERSION
+++ '[' true = true ']'
+++ eval 'echo "${var_cache_TARGET_GCC_VERSION}"'
++++ echo 4.9
+++ return
++ local targetgccversion=4.9
+++ get_build_var 2ND_TARGET_GCC_VERSION
+++ '[' true = true ']'
+++ eval 'echo "${var_cache_2ND_TARGET_GCC_VERSION}"'
++++ echo ''
+++ return
++ local targetgccversion2=
++ export TARGET_GCC_VERSION=4.9
++ TARGET_GCC_VERSION=4.9
++ export ANDROID_TOOLCHAIN=
++ ANDROID_TOOLCHAIN=
++ export ANDROID_TOOLCHAIN_2ND_ARCH=
++ ANDROID_TOOLCHAIN_2ND_ARCH=
+++ get_build_var TARGET_ARCH
+++ '[' true = true ']'
+++ eval 'echo "${var_cache_TARGET_ARCH}"'
++++ echo arm
+++ return
++ local ARCH=arm
++ local toolchaindir toolchaindir2=
++ case $ARCH in
++ toolchaindir=arm/arm-linux-androideabi-4.9/bin
++ '[' -d /home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin ']'
++ export ANDROID_TOOLCHAIN=/home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
++ ANDROID_TOOLCHAIN=/home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
++ '[' '' -a -d /home/runner/work/twrp/prebuilts/gcc/linux-x86/ ']'
++ export ANDROID_DEV_SCRIPTS=/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin
++ ANDROID_DEV_SCRIPTS=/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin
++ case $(uname -s) in
+++ uname -s
++ export ANDROID_DEV_SCRIPTS=/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin:/home/runner/work/twrp/prebuilts/misc/linux-x86/dtc:/home/runner/work/twrp/prebuilts/misc/linux-x86/libufdt
++ ANDROID_DEV_SCRIPTS=/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin:/home/runner/work/twrp/prebuilts/misc/linux-x86/dtc:/home/runner/work/twrp/prebuilts/misc/linux-x86/libufdt
+++ get_build_var ANDROID_BUILD_PATHS
+++ '[' true = true ']'
+++ eval 'echo "${var_cache_ANDROID_BUILD_PATHS}"'
++++ echo /home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin
+++ return
++ ANDROID_BUILD_PATHS=/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin:/home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
++ '[' -n '' ']'
++ ANDROID_BUILD_PATHS=/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin:/home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin:/home/runner/work/twrp/prebuilts/misc/linux-x86/dtc:/home/runner/work/twrp/prebuilts/misc/linux-x86/libufdt:
++ export ANDROID_BUILD_PATHS
++ case $(uname -s) in
+++ uname -s
++ ANDROID_EMULATOR_PREBUILTS=/home/runner/work/twrp/prebuilts/android-emulator/linux-x86_64
++ '[' -n /home/runner/work/twrp/prebuilts/android-emulator/linux-x86_64 -a -d /home/runner/work/twrp/prebuilts/android-emulator/linux-x86_64 ']'
++ export PATH=/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin:/home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin:/home/runner/work/twrp/prebuilts/misc/linux-x86/dtc:/home/runner/work/twrp/prebuilts/misc/linux-x86/libufdt:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/bin/
++ PATH=/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin:/home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin:/home/runner/work/twrp/prebuilts/misc/linux-x86/dtc:/home/runner/work/twrp/prebuilts/misc/linux-x86/libufdt:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/bin/
++ export PYTHONPATH=/home/runner/work/twrp/development/python-packages:
++ PYTHONPATH=/home/runner/work/twrp/development/python-packages:
+++ get_abs_build_var ANDROID_JAVA_HOME
+++ '[' true = true ']'
+++ eval 'echo "${abs_var_cache_ANDROID_JAVA_HOME}"'
++++ echo /home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86
+++ return
++ export ANDROID_JAVA_HOME=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86
++ ANDROID_JAVA_HOME=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86
++ export JAVA_HOME=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86
++ JAVA_HOME=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86
+++ get_abs_build_var ANDROID_JAVA_TOOLCHAIN
+++ '[' true = true ']'
+++ eval 'echo "${abs_var_cache_ANDROID_JAVA_TOOLCHAIN}"'
++++ echo /home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin
+++ return
++ export ANDROID_JAVA_TOOLCHAIN=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin
++ ANDROID_JAVA_TOOLCHAIN=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin
++ export ANDROID_PRE_BUILD_PATHS=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin:
++ ANDROID_PRE_BUILD_PATHS=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin:
++ export PATH=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin:/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin:/home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin:/home/runner/work/twrp/prebuilts/misc/linux-x86/dtc:/home/runner/work/twrp/prebuilts/misc/linux-x86/libufdt:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/bin/
++ PATH=/home/runner/work/twrp/prebuilts/jdk/jdk9/linux-x86/bin:/home/runner/work/twrp/out/soong/host/linux-x86/bin:/home/runner/work/twrp/out/host/linux-x86/bin:/home/runner/work/twrp/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:/home/runner/work/twrp/development/scripts:/home/runner/work/twrp/prebuilts/devtools/tools:/home/runner/work/twrp/external/selinux/prebuilts/bin:/home/runner/work/twrp/prebuilts/misc/linux-x86/dtc:/home/runner/work/twrp/prebuilts/misc/linux-x86/libufdt:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/runner/bin/
++ unset ANDROID_PRODUCT_OUT
+++ get_abs_build_var PRODUCT_OUT
+++ '[' true = true ']'
+++ eval 'echo "${abs_var_cache_PRODUCT_OUT}"'
++++ echo /home/runner/work/twrp/out/target/product/Nova
+++ return
++ export ANDROID_PRODUCT_OUT=/home/runner/work/twrp/out/target/product/Nova
++ ANDROID_PRODUCT_OUT=/home/runner/work/twrp/out/target/product/Nova
++ export OUT=/home/runner/work/twrp/out/target/product/Nova
++ OUT=/home/runner/work/twrp/out/target/product/Nova
++ unset ANDROID_HOST_OUT
+++ get_abs_build_var HOST_OUT
+++ '[' true = true ']'
+++ eval 'echo "${abs_var_cache_HOST_OUT}"'
++++ echo /home/runner/work/twrp/out/host/linux-x86
+++ return
++ export ANDROID_HOST_OUT=/home/runner/work/twrp/out/host/linux-x86
++ ANDROID_HOST_OUT=/home/runner/work/twrp/out/host/linux-x86
++ unset ANDROID_HOST_OUT_TESTCASES
+++ get_abs_build_var HOST_OUT_TESTCASES
+++ '[' true = true ']'
+++ eval 'echo "${abs_var_cache_HOST_OUT_TESTCASES}"'
++++ echo /home/runner/work/twrp/out/host/linux-x86/testcases
+++ return
++ export ANDROID_HOST_OUT_TESTCASES=/home/runner/work/twrp/out/host/linux-x86/testcases
++ ANDROID_HOST_OUT_TESTCASES=/home/runner/work/twrp/out/host/linux-x86/testcases
++ unset ANDROID_TARGET_OUT_TESTCASES
+++ get_abs_build_var TARGET_OUT_TESTCASES
+++ '[' true = true ']'
+++ eval 'echo "${abs_var_cache_TARGET_OUT_TESTCASES}"'
++++ echo /home/runner/work/twrp/out/target/product/Nova/testcases
+++ return
++ export ANDROID_TARGET_OUT_TESTCASES=/home/runner/work/twrp/out/target/product/Nova/testcases
++ ANDROID_TARGET_OUT_TESTCASES=/home/runner/work/twrp/out/target/product/Nova/testcases
++ set_sequence_number
+============================================
++ export BUILD_ENV_SEQUENCE_NUMBER=13
++ BUILD_ENV_SEQUENCE_NUMBER=13
++ export 'GCC_COLORS=error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
++ GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
++ export ASAN_OPTIONS=detect_leaks=0
++ ASAN_OPTIONS=detect_leaks=0
++ printconfig
+++ gettop
+++ local TOPFILE=build/make/core/envsetup.mk
+++ '[' -n '' -a -f /build/make/core/envsetup.mk ']'
+++ '[' -f build/make/core/envsetup.mk ']'
+++ PWD=
+++ /bin/pwd
++ local T=/home/runner/work/twrp
++ '[' '!' /home/runner/work/twrp ']'
++ get_build_var report_config
++ '[' true = true ']'
++ eval 'echo "${var_cache_report_config}"'
+++ echo '============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=16.1.0
+TARGET_PRODUCT=omni_Nova
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-1064-azure-x86_64-Ubuntu-18.04.6-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3B.190801.002
+OUT_DIR=/home/runner/work/twrp/out
+============================================'
++ return
++ destroy_build_var_cache
++ unset BUILD_VAR_CACHE_READY
++ local v
++ for v in $cached_vars
++ unset var_cache_2ND_TARGET_GCC_VERSION
++ for v in $cached_vars
++ unset var_cache_ANDROID_BUILD_PATHS
++ for v in $cached_vars
++ unset var_cache_OUT_DIR
++ for v in $cached_vars
++ unset var_cache_TARGET_ARCH
++ for v in $cached_vars
++ unset var_cache_TARGET_DEVICE
++ for v in $cached_vars
++ unset var_cache_TARGET_GCC_VERSION
++ for v in $cached_vars
++ unset var_cache_TARGET_PLATFORM_VERSION
++ for v in $cached_vars
++ unset var_cache_print
++ for v in $cached_vars
++ unset var_cache_report_config
++ unset cached_vars
++ for v in $cached_abs_vars
++ unset abs_var_cache_ANDROID_GCC_PREBUILTS
++ for v in $cached_abs_vars
++ unset abs_var_cache_ANDROID_JAVA_HOME
++ for v in $cached_abs_vars
++ unset abs_var_cache_ANDROID_JAVA_TOOLCHAIN
++ for v in $cached_abs_vars
++ unset abs_var_cache_ANDROID_PREBUILTS
++ for v in $cached_abs_vars
++ unset abs_var_cache_HOST_OUT
++ for v in $cached_abs_vars
++ unset abs_var_cache_HOST_OUT_TESTCASES
++ for v in $cached_abs_vars
++ unset abs_var_cache_PRODUCT_OUT
++ for v in $cached_abs_vars
++ unset abs_var_cache_TARGET_OUT_TESTCASES
++ for v in $cached_abs_vars
++ unset abs_var_cache_print
++ unset cached_abs_vars
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=16.1.0
+TARGET_PRODUCT=omni_Nova
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-1064-azure-x86_64-Ubuntu-18.04.6-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3B.190801.002
+OUT_DIR=/home/runner/work/twrp/out
+============================================
+++ nproc
++ make -j2 recoveryimage
+++ get_make_command -j2 recoveryimage
+++ '[' -f build/soong/soong_ui.bash ']'
+++ for arg in "$@"
+++ [[ -j2 == -C* ]]
+++ for arg in "$@"
+++ [[ recoveryimage == -C* ]]
+++ echo build/soong/soong_ui.bash --make-mode
++ _wrap_build build/soong/soong_ui.bash --make-mode -j2 recoveryimage
+++ date +%s
++ local start_time=1640269452
++ build/soong/soong_ui.bash --make-mode -j2 recoveryimage
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=16.1.0
+TARGET_PRODUCT=omni_Nova
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-1064-azure-x86_64-Ubuntu-18.04.6-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3B.190801.002
+OUT_DIR=/home/runner/work/twrp/out
+============================================
+14:24:15 Missing ninja log: stat /home/runner/work/twrp/out/.ninja_log: no such file or directory
+[1/1] /home/runner/work/twrp/out/soong/.minibootstrap/minibp /home/runner/work/twrp/out/soong/.bootstrap/build.ninja
+[1/39] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-deptools/pkg/github.com/google/blueprint/deptools.a
+[2/39] compile /home/runner/work/twrp/out/soong/.bootstrap/gotestmain/obj/gotestmain.a
+[3/39] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-pathtools/pkg/github.com/google/blueprint/pathtools.a
+[4/39] compile /home/runner/work/twrp/out/soong/.bootstrap/bpglob/obj/bpglob.a
+[5/39] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-pathtools/test/github.com/google/blueprint/pathtools.a
+[6/39] link /home/runner/work/twrp/out/soong/.bootstrap/bpglob/obj/a.out
+[7/39] link /home/runner/work/twrp/out/soong/.bootstrap/gotestmain/obj/a.out
+[8/39] cp /home/runner/work/twrp/out/soong/.bootstrap/bin/gotestmain
+[9/39] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/blueprint-pathtools/test/test.go
+[10/39] compile /home/runner/work/twrp/out/soong/.bootstrap/gotestrunner/obj/gotestrunner.a
+[11/39] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-pathtools/test/test.a
+[12/39] link /home/runner/work/twrp/out/soong/.bootstrap/gotestrunner/obj/a.out
+[13/39] cp /home/runner/work/twrp/out/soong/.bootstrap/bin/gotestrunner
+[14/39] link /home/runner/work/twrp/out/soong/.bootstrap/blueprint-pathtools/test/test
+[15/39] test github.com/google/blueprint/pathtools
+[16/39] cp /home/runner/work/twrp/out/soong/.bootstrap/bin/bpglob
+[17/39] glob external/libdrm/Android.sources.bp
+[18/39] glob external/boringssl/sources.bp
+[19/39] glob external/libdrm/amdgpu/Android.sources.bp
+[20/39] glob external/libdrm/etnaviv/Android.sources.bp
+[21/39] glob external/libdrm/freedreno/Android.sources.bp
+[22/39] glob external/libdrm/intel/Android.sources.bp
+[23/39] glob external/libdrm/libkms/Android.sources.bp
+[24/39] glob external/libdrm/nouveau/Android.sources.bp
+[25/39] glob external/libdrm/tests/modetest/Android.sources.bp
+[26/39] glob external/libdrm/radeon/Android.sources.bp
+[27/39] glob external/libdrm/tests/util/Android.sources.bp
+[28/39] glob external/libdrm/tests/planetest/Android.sources.bp
+[29/39] glob external/scrypt/sources.bp
+[30/39] glob external/tensorflow/tensorflow/contrib/lite/tflite_static.bp
+[31/39] glob frameworks/rs/support.bp
+[32/39] glob libcore/JavaLibrary.bp
+[33/39] glob libcore/annotated_java_files.bp
+[34/39] glob libcore/NativeCode.bp
+[35/39] glob libcore/non_openjdk_java_files.bp
+[36/39] glob libcore/openjdk_java_files.bp
+[37/39] glob prebuilts/ndk/cpufeatures.bp
+[38/39] glob prebuilts/ndk/stl.bp
+[1/76] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/blueprint/test/test.go
+[2/76] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/blueprint-parser/test/test.go
+[3/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-parser/pkg/github.com/google/blueprint/parser.a
+[4/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-parser/test/github.com/google/blueprint/parser.a
+[5/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-parser/test/test.a
+[6/76] link /home/runner/work/twrp/out/soong/.bootstrap/blueprint-parser/test/test
+[7/76] test github.com/google/blueprint/parser
+[8/76] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/blueprint-proptools/test/test.go
+[9/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-proptools/test/github.com/google/blueprint/proptools.a
+[10/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-proptools/test/test.a
+[11/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-proptools/pkg/github.com/google/blueprint/proptools.a
+[12/76] link /home/runner/work/twrp/out/soong/.bootstrap/blueprint-proptools/test/test
+[13/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint/test/github.com/google/blueprint.a
+[14/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint/test/test.a
+[15/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint/pkg/github.com/google/blueprint.a
+[16/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-bootstrap-bpdoc/pkg/github.com/google/blueprint/bootstrap/bpdoc.a
+[17/76] link /home/runner/work/twrp/out/soong/.bootstrap/blueprint/test/test
+[18/76] test github.com/google/blueprint/proptools
+[19/76] test github.com/google/blueprint
+[20/76] compile /home/runner/work/twrp/out/soong/.bootstrap/blueprint-bootstrap/pkg/github.com/google/blueprint/bootstrap.a
+[21/76] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/soong-android/test/test.go
+[22/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong/pkg/android/soong.a
+[23/76] compile /home/runner/work/twrp/out/soong/.bootstrap/loadplugins/obj/loadplugins.a
+[24/76] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/soong-cc/test/test.go
+[25/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-env/pkg/android/soong/env.a
+[26/76] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/soong-cc-config/test/test.go
+[27/76] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/soong-java/test/test.go
+[28/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-omnirom/pkg/omnirom/soong/android.a
+[29/76] link /home/runner/work/twrp/out/soong/.bootstrap/loadplugins/obj/a.out
+[30/76] cp /home/runner/work/twrp/out/soong/.bootstrap/bin/loadplugins
+[31/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-android/pkg/android/soong/android.a
+[32/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-android/test/android/soong/android.a
+[33/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-android/test/test.a
+[34/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-cc-config/test/android/soong/cc/config.a
+[35/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-cc-config/test/test.a
+[36/76] link /home/runner/work/twrp/out/soong/.bootstrap/soong-android/test/test
+[37/76] test android/soong/android
+[38/76] link /home/runner/work/twrp/out/soong/.bootstrap/soong-cc-config/test/test
+[39/76] test android/soong/cc/config
+[40/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-java-config/pkg/android/soong/java/config.a
+[41/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-java-config-error_prone/pkg/android/soong/java/config/error_prone.a
+[42/76] gotestmain /home/runner/work/twrp/out/soong/.bootstrap/soong-python/test/test.go
+[43/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-phony/pkg/android/soong/phony.a
+[44/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-cc-config/pkg/android/soong/cc/config.a
+[45/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-bpf/pkg/android/soong/bpf.a
+[46/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-shared/pkg/android/soong/shared.a
+[47/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-python/test/android/soong/python.a
+[48/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-python/test/test.a
+[49/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-genrule/pkg/android/soong/genrule.a
+[50/76] link /home/runner/work/twrp/out/soong/.bootstrap/soong-python/test/test
+[51/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-cc/test/android/soong/cc.a
+[52/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-cc/test/test.a
+[53/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-cc/pkg/android/soong/cc.a
+[54/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-art/pkg/android/soong/art.a
+[55/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-clang/pkg/android/soong/external/clang.a
+[56/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-clang-prebuilts/pkg/android/soong/prebuilts/clang/host/linux-x86/clangprebuilts.a
+[57/76] link /home/runner/work/twrp/out/soong/.bootstrap/soong-cc/test/test
+[58/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-java/test/android/soong/java.a
+[59/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-java/test/test.a
+[60/76] link /home/runner/work/twrp/out/soong/.bootstrap/soong-java/test/test
+[61/76] test android/soong/cc
+[62/76] test android/soong/java
+[63/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-llvm/pkg/android/soong/external/llvm.a
+[64/76] test android/soong/python
+[65/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-python/pkg/android/soong/python.a
+[66/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-java/pkg/android/soong/java.a
+[67/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong-wayland-protocol-codegen/pkg/android/soong/external/wayland-protocol.a
+[68/76] create /home/runner/work/twrp/out/soong/.bootstrap/soong_build/gen/plugin.go
+[69/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong_env/obj/soong_env.a
+[70/76] compile /home/runner/work/twrp/out/soong/.bootstrap/hidl-soong-rules/pkg/android/soong/hidl.a
+[71/76] compile /home/runner/work/twrp/out/soong/.bootstrap/soong_build/obj/soong_build.a
+[72/76] link /home/runner/work/twrp/out/soong/.bootstrap/soong_env/obj/a.out
+[73/76] cp /home/runner/work/twrp/out/soong/.bootstrap/bin/soong_env
+[74/76] link /home/runner/work/twrp/out/soong/.bootstrap/soong_build/obj/a.out
+[75/76] cp /home/runner/work/twrp/out/soong/.bootstrap/bin/soong_build
+[76/76] /home/runner/work/twrp/out/soong/.bootstrap/bin/soong_build /home/runner/work/twrp/out/soong/build.ninja
+/home/runner/work/twrp/out/build-omni_Nova-cleanspec.ninja is missing, regenerating...
+/home/runner/work/twrp/out/build-omni_Nova.ninja is missing, regenerating...
+[1/146] including /home/runner/work/twrp/out/soong/Android-omni_Nova.mk ...
+[2/146] including art/Android.mk ...
+[3/146] including bionic/Android.mk ...
+[4/146] including bootable/recovery/Android.mk ...
+bootable/recovery/gui/Android.mk:212: warning: 
+****************************************************************************
+  Could not find ui.xml for TW_THEME: portrait_hdpi
+  Set TARGET_SCREEN_WIDTH and TARGET_SCREEN_HEIGHT to automatically select
+  an appropriate theme, or set TW_THEME to one of the following:
+    
+****************************************************************************
+bootable/recovery/gui/Android.mk:213: error: Theme selection failed; exiting.
+14:24:44 ckati failed with: exit status 1
++ local ret=1
+++ date +%s
++ local end_time=1640269484
++ local tdiff=32
++ local hours=0
++ local mins=0
++ local secs=32
+++ tput colors
++ local ncolors=
+
++ '[' -n '' ']'
+#### failed to build some targets (32 seconds) ####
++ color_failed=
+
++ color_success=
++ color_reset=
++ echo
++ '[' 1 -eq 0 ']'
++ echo -n '#### failed to build some targets '
++ '[' 0 -gt 0 ']'
++ '[' 0 -gt 0 ']'
++ '[' 32 -gt 0 ']'
++ printf '(%s seconds)' 32
++ echo ' ####'
++ echo
++ return 1
